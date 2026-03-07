@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Slides - Photosynthesis</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        .slide {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: #667eea;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .slide h1 {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        .slide h2 {
+            font-size: 2.2rem;
+            color: #764ba2;
+            margin-bottom: 25px;
+        }
+        .slide h3 {
+            font-size: 1.6rem;
+            color: #555;
+            margin: 25px 0 15px 0;
+        }
+        .slide p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .slide ul, .slide ol {
+            margin-left: 40px;
+            margin-bottom: 25px;
+        }
+        .slide li {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #667eea;
+        }
+        .success-box {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #4caf50;
+        }
+        .success-box li {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        .equation-box {
+            background: #fff3e0;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #f57c00;
+            margin: 25px 0;
+        }
+        .title-slide {
+            text-align: center;
+        }
+        .title-slide h1 {
+            font-size: 4rem;
+            margin-bottom: 40px;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            margin-top: 20px;
+        }
+        .question-slide {
+            text-align: center;
+        }
+        .big-emoji {
+            font-size: 6rem;
+            margin-bottom: 30px;
+        }
+        .answer-reveal {
+            background: #667eea;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .fact-card {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .fact-card .emoji {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .slide { 
+                box-shadow: none; 
+                page-break-after: always;
+                margin: 0;
+            }
+        }
+        @media (max-width: 768px) {
+            .slide { padding: 30px; }
+            .slide h1 { font-size: 2rem; }
+            .slide p, .slide li { font-size: 1.1rem; }
+            .two-column { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title -->
+    <div class="slide title-slide">
+        <span class="emoji big-emoji">🌿</span>
+        <h1>Photosynthesis</h1>
+        <h2>How Plants Make Their Own Food</h2>
+        <p class="subtitle">Grade: Primary 6 | Subject: Science</p>
+    </div>
+
+    <!-- Slide 2: Learning Objectives -->
+    <div class="slide">
+        <h2>🎯 What Will We Learn Today?</h2>
+        <div class="success-box">
+            <ul>
+                <li>✅ What photosynthesis means</li>
+                <li>✅ What plants need to make food</li>
+                <li>✅ How plants make food</li>
+                <li>✅ Why plants are important</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 3: The Big Question -->
+    <div class="slide question-slide">
+        <span class="emoji big-emoji">🤔</span>
+        <h2>Think About This...</h2>
+        <p style="font-size: 2rem; margin-bottom: 30px;">Where do plants get their food from?</p>
+        <ul style="text-align: left; display: inline-block; font-size: 1.4rem;">
+            <li>Do they eat like we do? ❌</li>
+            <li>Do they buy food from a shop? ❌</li>
+            <li>Do they order delivery? ❌</li>
+        </ul>
+        <div class="answer-reveal" style="margin-top: 40px;">
+            They MAKE their own food! ✅
+        </div>
+    </div>
+
+    <!-- Slide 4: What is Photosynthesis? -->
+    <div class="slide">
+        <h2>📚 Breaking Down the Word</h2>
+        <div class="highlight-box">
+            <p style="font-size: 2rem; text-align: center;">
+                <strong>PHOTO</strong> = Light ☀️
+            </p>
+            <p style="font-size: 2rem; text-align: center; margin-top: 20px;">
+                <strong>SYNTHESIS</strong> = Making/Building 🔨
+            </p>
+        </div>
+        <p style="font-size: 2.2rem; text-align: center; margin-top: 40px; color: #667eea;">
+            <strong>PHOTOSYNTHESIS</strong> = Making food using light!
+        </p>
+    </div>
+
+    <!-- Slide 5: The Plant Kitchen -->
+    <div class="slide">
+        <span class="emoji big-emoji">🏭</span>
+        <h2>Plants are Like Food Factories!</h2>
+        <p style="font-size: 1.4rem;">Imagine a factory that:</p>
+        <ul>
+            <li>Takes in raw materials</li>
+            <li>Uses energy (sunlight)</li>
+            <li>Produces food (glucose)</li>
+            <li>Gives out oxygen</li>
+        </ul>
+        <div class="highlight-box" style="margin-top: 30px;">
+            <p style="font-size: 1.6rem; text-align: center;"><strong>That's a plant!</strong></p>
+        </div>
+    </div>
+
+    <!-- Slide 6: The Recipe -->
+    <div class="slide">
+        <h2><span class="emoji">🧪</span> What Do Plants Need?</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>Three main ingredients:</strong></p>
+        <ul>
+            <li><strong>1️⃣ Carbon Dioxide (CO₂)</strong> - from the air</li>
+            <li><strong>2️⃣ Water (H₂O)</strong> - from the soil</li>
+            <li><strong>3️⃣ Sunlight</strong> - from the sun ☀️</li>
+        </ul>
+        <div class="highlight-box">
+            <p style="font-size: 1.3rem;"><strong>Plus:</strong> Chlorophyll (green color in leaves)</p>
+        </div>
+    </div>
+
+    <!-- Slide 7: Where Does It Happen? -->
+    <div class="slide">
+        <span class="emoji big-emoji">🍃</span>
+        <h2>In the Leaves!</h2>
+        <p style="font-size: 1.6rem; margin-bottom: 30px;"><strong>Why are leaves green?</strong></p>
+        <div class="highlight-box">
+            <p style="font-size: 1.5rem;">Because they contain <strong>chlorophyll</strong>!</p>
+        </div>
+        <p style="font-size: 1.4rem; margin-top: 30px;">Chlorophyll acts like solar panels - it captures sunlight!</p>
+    </div>
+
+    <!-- Slide 8: The Process -->
+    <div class="slide">
+        <h2><span class="emoji">🔄</span> How Photosynthesis Works</h2>
+        <ol>
+            <li><strong>Roots</strong> absorb water from soil</li>
+            <li><strong>Leaves</strong> take in carbon dioxide from air</li>
+            <li><strong>Chlorophyll</strong> captures sunlight</li>
+            <li><strong>Plant</strong> uses energy to convert water + CO₂ into glucose</li>
+            <li><strong>Oxygen</strong> is released as a byproduct</li>
+        </ol>
+    </div>
+
+    <!-- Slide 9: The Equation -->
+    <div class="slide">
+        <h2><span class="emoji">⚗️</span> Photosynthesis Equation</h2>
+        <div class="equation-box">
+            <p>Carbon Dioxide + Water + Sunlight</p>
+            <p style="font-size: 2rem; margin: 15px 0;">↓</p>
+            <p>GLUCOSE (food) + OXYGEN</p>
+        </div>
+        <div class="highlight-box">
+            <p style="font-size: 1.3rem; text-align: center;">
+                <strong>Word Equation:</strong><br>
+                CO₂ + Water + Sunlight → Glucose + Oxygen
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 10: What Does the Plant Do With Glucose? -->
+    <div class="slide">
+        <span class="emoji big-emoji">🍬</span>
+        <h2>The Food Plants Make</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>Glucose is used for:</strong></p>
+        <div class="success-box">
+            <ul>
+                <li>✅ Energy (like how we use food)</li>
+                <li>✅ Growth (building new leaves, stems, roots)</li>
+                <li>✅ Storage (storing as starch for later)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 11: Why Are Plants Important? -->
+    <div class="slide">
+        <h2><span class="emoji">🌍</span> Plants Help Us!</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>Plants give us:</strong></p>
+        <div class="two-column">
+            <div class="fact-card">
+                <span class="emoji">💨</span>
+                <p><strong>Oxygen</strong> - we breathe it!</p>
+            </div>
+            <div class="fact-card">
+                <span class="emoji">🍎</span>
+                <p><strong>Food</strong> - fruits, vegetables, grains</p>
+            </div>
+            <div class="fact-card">
+                <span class="emoji">🌬️</span>
+                <p><strong>Clean air</strong> - remove CO₂</p>
+            </div>
+            <div class="fact-card">
+                <span class="emoji">🏠</span>
+                <p><strong>Homes</strong> - for animals</p>
+            </div>
+        </div>
+        <div class="highlight-box" style="margin-top: 30px;">
+            <p style="font-size: 1.4rem; text-align: center;">
+                <strong>Without plants, there would be no life on Earth!</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 12: Fun Facts -->
+    <div class="slide">
+        <h2><span class="emoji">🌟</span> Fun Facts!</h2>
+        <div class="two-column">
+            <div class="fact-card">
+                <span class="emoji">🌿</span>
+                <p>Plants make enough oxygen for all living things</p>
+            </div>
+            <div class="fact-card">
+                <span class="emoji">🌳</span>
+                <p>One large tree can provide oxygen for 4 people</p>
+            </div>
+            <div class="fact-card">
+                <span class="emoji">🌊</span>
+                <p>Algae in the ocean make 50% of Earth's oxygen</p>
+            </div>
+            <div class="fact-card">
+                <span class="emoji">⏰</span>
+                <p>Plants have been making food for 3 billion years!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 13: Quick Check -->
+    <div class="slide question-slide">
+        <h2>Let's Review! ✅</h2>
+        <div style="text-align: left; display: inline-block; font-size: 1.3rem;">
+            <p><strong>Q1:</strong> What does "photo" mean?</p>
+            <p class="answer-reveal" style="font-size: 1rem; padding: 10px 20px;">Light! ☀️</p>
+            
+            <p style="margin-top: 25px;"><strong>Q2:</strong> What 3 things do plants need?</p>
+            <p class="answer-reveal" style="font-size: 1rem; padding: 10px 20px;">Carbon dioxide, water, sunlight</p>
+            
+            <p style="margin-top: 25px;"><strong>Q3:</strong> What gas do plants release?</p>
+            <p class="answer-reveal" style="font-size: 1rem; padding: 10px 20px;">Oxygen! 💨</p>
+            
+            <p style="margin-top: 25px;"><strong>Q4:</strong> Where does photosynthesis happen?</p>
+            <p class="answer-reveal" style="font-size: 1rem; padding: 10px 20px;">In the leaves! 🍃</p>
+        </div>
+    </div>
+
+    <!-- Slide 14: Activity Time -->
+    <div class="slide">
+        <span class="emoji big-emoji">🎨</span>
+        <h2>Your Turn!</h2>
+        <p style="font-size: 1.5rem; margin-bottom: 30px;"><strong>Complete the worksheet:</strong></p>
+        <ol style="font-size: 1.4rem;">
+            <li>Label the photosynthesis diagram</li>
+            <li>Fill in the blanks</li>
+            <li>Match the words to definitions</li>
+            <li>Answer the questions</li>
+        </ol>
+    </div>
+
+    <!-- Slide 15: Exit Ticket -->
+    <div class="slide">
+        <span class="emoji big-emoji">🎫</span>
+        <h2>Before You Go...</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>Answer these 3 questions:</strong></p>
+        <ol style="font-size: 1.3rem;">
+            <li>What is photosynthesis? <em style="color: #999;">(2 marks)</em></li>
+            <li>Name the 3 things plants need for photosynthesis <em style="color: #999;">(3 marks)</em></li>
+            <li>Why are plants important? <em style="color: #999;">(2 marks)</em></li>
+        </ol>
+    </div>
+
+    <!-- Slide 16: Great Work -->
+    <div class="slide title-slide">
+        <span class="emoji big-emoji">👏</span>
+        <h1>You Did It!</h1>
+        <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>Today you learned:</strong></p>
+        <div class="success-box" style="text-align: left; display: inline-block;">
+            <ul>
+                <li>✅ What photosynthesis means</li>
+                <li>✅ What plants need to make food</li>
+                <li>✅ How plants make food</li>
+                <li>✅ Why plants are important</li>
+            </ul>
+        </div>
+        <p class="subtitle"><strong>Next lesson:</strong> Respiration in plants!</p>
+    </div>
+
+    <!-- Slide 17: Homework -->
+    <div class="slide">
+        <h2><span class="emoji">📚</span> Homework</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 30px;"><strong>Due Next Lesson - Choose ONE:</strong></p>
+        <ol style="font-size: 1.3rem;">
+            <li><strong>Draw</strong> a poster showing photosynthesis</li>
+            <li><strong>Write</strong> a diary entry from a leaf's perspective</li>
+            <li><strong>Create</strong> a photosynthesis rap or poem</li>
+        </ol>
+        <div class="highlight-box" style="margin-top: 30px;">
+            <p style="font-size: 1.4rem; text-align: center;">Be creative! 🎨</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 40px; color: white;">
+        <p><em>Created by OpenClaw AI | Supporting teachers, one lesson at a time!</em></p>
+    </div>
+
+</body>
+</html>
