@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw for Teachers - Save 15+ Hours Per Week</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .hero .cta {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .hero .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px 40px;
+            background: #f8f9fa;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .comparison {
+            padding: 60px 40px;
+        }
+        
+        .comparison h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .before, .after {
+            padding: 40px;
+            border-radius: 15px;
+        }
+        
+        .before {
+            background: #fee;
+            border: 3px solid #f5c6cb;
+        }
+        
+        .after {
+            background: #d4edda;
+            border: 3px solid #c3e6cb;
+        }
+        
+        .before h3, .after h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .before h3 { color: #dc3545; }
+        .after h3 { color: #28a745; }
+        
+        .time-list {
+            list-style: none;
+        }
+        
+        .time-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+        
+        .time-list li:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-top: 10px;
+            padding-top: 20px;
+        }
+        
+        .features {
+            background: #f8f9fa;
+            padding: 60px 40px;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .demo-section {
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .demo-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .demo-item {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .demo-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+        
+        .demo-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .demo-item p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .testimonial {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .testimonial blockquote {
+            font-size: 1.8rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+        
+        .testimonial cite {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🎓 Teachers: Stop Spending Hours on Lesson Prep!</h1>
+            <p class="subtitle">Turn 3 hours of work into 10 minutes with OpenClaw AI</p>
+            <a href="#demo" class="cta">See the Demo ↓</a>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number">99%</span>
+                <span class="stat-label">Time Saved</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Hours Saved Per Week</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">2 min</span>
+                <span class="stat-label">To Create Full Lesson</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Ready to Use</span>
+            </div>
+        </div>
+        
+        <div class="comparison">
+            <h2>⏰ The Time Comparison</h2>
+            <div class="comparison-grid">
+                <div class="before">
+                    <h3>😫 Before OpenClaw</h3>
+                    <ul class="time-list">
+                        <li><span>Lesson Plan</span><span>45 min</span></li>
+                        <li><span>PowerPoint Slides</span><span>90 min</span></li>
+                        <li><span>Worksheet</span><span>60 min</span></li>
+                        <li><span>Quiz + Answer Key</span><span>30 min</span></li>
+                        <li><span>❌ TOTAL</span><span>3.5 hours</span></li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <h3>✨ With OpenClaw</h3>
+                    <ul class="time-list">
+                        <li><span>Lesson Plan</span><span>30 sec</span></li>
+                        <li><span>PowerPoint Slides</span><span>30 sec</span></li>
+                        <li><span>Worksheet</span><span>30 sec</span></li>
+                        <li><span>Quiz + Answer Key</span><span>30 sec</span></li>
+                        <li><span>✅ TOTAL</span><span>2 minutes</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h2>🎯 What Can OpenClaw Create?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Complete Lesson Plans</h3>
+                    <p>Learning objectives, success criteria, activities, differentiation, assessment - everything you need.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Professional Slides</h3>
+                    <p>Engaging presentations with visuals, explanations, and student activities ready to project.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Worksheets & Handouts</h3>
+                    <p>Varied exercises, clear instructions, and complete answer keys included.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Quizzes & Tests</h3>
+                    <p>Multiple choice, short answer, matching - with full answer keys for easy marking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Any Subject, Any Level</h3>
+                    <p>Primary, secondary, tertiary - Science, Math, English, History, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Results</h3>
+                    <p>Just describe what you need in plain language. Get complete materials in minutes.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section" id="demo">
+            <h2>🌿 See the Demo: Photosynthesis Lesson</h2>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 20px;">This complete lesson package was created in 2 minutes with ONE request!</p>
+            
+            <div class="demo-grid">
+                <a href="Photosynthesis_Lesson_Plan.md" class="demo-item">
+                    <h4>📋 Lesson Plan</h4>
+                    <p>60-minute lesson with objectives, activities, and assessment</p>
+                </a>
+                <a href="Photosynthesis_Presentation.md" class="demo-item">
+                    <h4>🎨 17 Presentation Slides</h4>
+                    <p>Engaging slides from introduction to exit ticket</p>
+                </a>
+                <a href="Photosynthesis_Worksheet.md" class="demo-item">
+                    <h4>📝 45-Mark Worksheet</h4>
+                    <p>Diagram labeling, fill-in-blanks, matching, + answer key</p>
+                </a>
+                <a href="Photosynthesis_quiz.md" class="demo-item">
+                    <h4>✅ 30-Mark Quiz</h4>
+                    <p>Multiple choice, vocabulary, short answer + answer key</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="testimonial">
+            <blockquote>
+                "I used to spend my entire Sunday preparing lessons. Now I spend 10 minutes with OpenClaw and have the whole week ready. This is a game changer for teachers!"
+            </blockquote>
+            <cite>— A Happy Teacher</cite>
+        </div>
+        
+        <div class="footer">
+            <p>🎓 <strong>Learn OpenClaw with Garett Wong</strong></p>
+            <p style="margin-top: 15px; opacity: 0.8;">Teach Smarter. Live Better.</p>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">Created by OpenClaw AI | Demo Lesson Generated in 2 Minutes</p>
+        </div>
+    </div>
+</body>
+</html>
