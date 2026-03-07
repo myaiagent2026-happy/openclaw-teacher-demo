@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenClaw for Teachers - Save 15+ Hours Per Week</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
@@ -19,7 +14,6 @@
             min-height: 100vh;
             padding: 20px;
         }
-        
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -28,26 +22,22 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
         }
-        
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 80px 40px;
             text-align: center;
         }
-        
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 20px;
             font-weight: 700;
         }
-        
         .hero .subtitle {
             font-size: 1.5rem;
             opacity: 0.95;
             margin-bottom: 30px;
         }
-        
         .hero .cta {
             display: inline-block;
             background: #ffd700;
@@ -60,12 +50,10 @@
             transition: transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        
         .hero .cta:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.4);
         }
-        
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -73,77 +61,64 @@
             padding: 60px 40px;
             background: #f8f9fa;
         }
-        
-        .stat-card {
+        .stat-card{
             background: white;
             padding: 40px;
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
-        .stat-number {
+        .stat-number{
             font-size: 3.5rem;
             font-weight: 700;
             color: #667eea;
             display: block;
             margin-bottom: 10px;
         }
-        
-        .stat-label {
+        .stat-label{
             font-size: 1.1rem;
             color: #666;
         }
-        
-        .comparison {
+        .comparison{
             padding: 60px 40px;
         }
-        
-        .comparison h2 {
+        .comparison h2{
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 40px;
             color: #333;
         }
-        
-        .comparison-grid {
+        .comparison-grid{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             margin-bottom: 40px;
         }
-        
-        .before, .after {
+        .before, .after{
             padding: 40px;
             border-radius: 15px;
         }
-        
-        .before {
+        .before{
             background: #fee;
             border: 3px solid #f5c6cb;
         }
-        
-        .after {
+        .after{
             background: #d4edda;
             border: 3px solid #c3e6cb;
         }
-        
-        .before h3, .after h3 {
+        .before h3, .after h3{
             font-size: 1.8rem;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
-        .before h3 { color: #dc3545; }
-        .after h3 { color: #28a745; }
-        
-        .time-list {
+        .before h3{ color: #dc3545; }
+        .after h3{ color: #28a745; }
+        .time-list{
             list-style: none;
         }
-        
-        .time-list li {
+        .time-list li{
             padding: 15px 0;
             border-bottom: 1px solid rgba(0,0,0,0.1);
             display: flex;
@@ -151,144 +126,140 @@
             align-items: center;
             font-size: 1.1rem;
         }
-        
-        .time-list li:last-child {
+        .time-list li:last-child{
             border-bottom: none;
             font-weight: 700;
             font-size: 1.3rem;
             margin-top: 10px;
             padding-top: 20px;
         }
-        
-        .features {
-            background: #f8f9fa;
+        .demo-section{
             padding: 60px 40px;
-        }
-        
-        .features h2 {
             text-align: center;
+            background: #f8f9fa;
+        }
+        .demo-section h2{
             font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .demo-section .subtitle{
+            font-size: 1.2rem;
+            color: #666;
             margin-bottom: 40px;
         }
-        
-        .features-grid {
+        .demo-grid{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-        
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #667eea;
-        }
-        
-        .feature-card p {
-            color: #666;
-            line-height: 1.8;
-        }
-        
-        .demo-section {
-            padding: 60px 40px;
-            text-align: center;
-        }
-        
-        .demo-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
-        
-        .demo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin-top: 40px;
         }
-        
-        .demo-item {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
+        .demo-item{
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
             text-decoration: none;
             color: #333;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 2px solid transparent;
+            transition: all 0.3s;
+            border: 3px solid transparent;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
-        .demo-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        .demo-item:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
             border-color: #667eea;
         }
-        
-        .demo-item h4 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
+        .demo-item .icon{
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .demo-item h4{
+            font-size: 1.5rem;
+            margin-bottom: 12px;
             color: #667eea;
         }
-        
-        .demo-item p {
+        .demo-item p{
             color: #666;
             font-size: 0.95rem;
+            line-height: 1.6;
         }
-        
-        .testimonial {
+        .demo-item .badge{
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        .testimonial{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 60px 40px;
             text-align: center;
         }
-        
-        .testimonial blockquote {
+        .testimonial blockquote{
             font-size: 1.8rem;
             font-style: italic;
             max-width: 800px;
             margin: 0 auto 30px;
             line-height: 1.8;
         }
-        
-        .testimonial cite {
+        .testimonial cite{
             font-size: 1.2rem;
             opacity: 0.9;
         }
-        
-        .footer {
+        .footer{
             background: #333;
             color: white;
             padding: 40px;
             text-align: center;
         }
-        
-        .footer a {
+        .footer a{
             color: #ffd700;
             text-decoration: none;
             font-weight: 600;
         }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .comparison-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats {
-                grid-template-columns: 1fr;
-            }
+        .features{
+            padding: 60px 40px;
+        }
+        .features h2{
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        .features-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card{
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover{
+            transform: translateY(-5px);
+        }
+        .feature-icon{
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .feature-card h3{
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        .feature-card p{
+            color: #666;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px){
+            .hero h1{ font-size: 2rem; }
+            .comparison-grid{ grid-template-columns: 1fr; }
+            .stats{ grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -345,6 +316,38 @@
             </div>
         </div>
         
+        <div class="demo-section" id="demo">
+            <h2>🌿 See the Demo: Photosynthesis Lesson</h2>
+            <p class="subtitle">This complete lesson package was created in 2 minutes with ONE request!</p>
+            
+            <div class="demo-grid">
+                <a href="Lesson_Plan.html" class="demo-item">
+                    <span class="icon">📋</span>
+                    <h4>Lesson Plan</h4>
+                    <p>60-minute lesson with objectives, activities, differentiation, and assessment</p>
+                    <span class="badge">Print Ready</span>
+                </a>
+                <a href="Presentation_Slides.html" class="demo-item">
+                    <span class="icon">🎨</span>
+                    <h4>17 Presentation Slides</h4>
+                    <p>Beautiful, engaging slides with visuals, questions, and activities</p>
+                    <span class="badge">Project Ready</span>
+                </a>
+                <a href="Worksheet.html" class="demo-item">
+                    <span class="icon">📝</span>
+                    <h4>45-Mark Worksheet</h4>
+                    <p>Diagram labeling, fill-in-blanks, matching, creative tasks + answer key</p>
+                    <span class="badge">Student Ready</span>
+                </a>
+                <a href="Quiz.html" class="demo-item">
+                    <span class="icon">✅</span>
+                    <h4>30-Mark Quiz</h4>
+                    <p>Multiple choice, true/false, short answer with timer + answer key</p>
+                    <span class="badge">Test Ready</span>
+                </a>
+            </div>
+        </div>
+        
         <div class="features">
             <h2>🎯 What Can OpenClaw Create?</h2>
             <div class="features-grid">
@@ -378,30 +381,6 @@
                     <h3>Instant Results</h3>
                     <p>Just describe what you need in plain language. Get complete materials in minutes.</p>
                 </div>
-            </div>
-        </div>
-        
-        <div class="demo-section" id="demo">
-            <h2>🌿 See the Demo: Photosynthesis Lesson</h2>
-            <p style="font-size: 1.2rem; color: #666; margin-bottom: 20px;">This complete lesson package was created in 2 minutes with ONE request!</p>
-            
-            <div class="demo-grid">
-                <a href="Lesson_Plan.html" class="demo-item">
-                    <h4>📋 Lesson Plan</h4>
-                    <p>60-minute lesson with objectives, activities, and assessment</p>
-                </a>
-                <a href="Presentation_Slides.html" class="demo-item">
-                    <h4>🎨 17 Presentation Slides</h4>
-                    <p>Engaging slides from introduction to exit ticket</p>
-                </a>
-                <a href="Worksheet.html" class="demo-item">
-                    <h4>📝 45-Mark Worksheet</h4>
-                    <p>Diagram labeling, fill-in-blanks, matching, + answer key</p>
-                </a>
-                <a href="Quiz.html" class="demo-item">
-                    <h4>✅ 30-Mark Quiz</h4>
-                    <p>Multiple choice, vocabulary, short answer + answer key</p>
-                </a>
             </div>
         </div>
         
