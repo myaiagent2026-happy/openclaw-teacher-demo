@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw for Educators | Professional Teaching Resources</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+        
+        /* Professional Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 3.2rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        header .tagline {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        
+        header .cta-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 18px 45px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: all 0.3s;
+            letter-spacing: 0.3px;
+        }
+        
+        header .cta-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        /* Statistics Section */
+        .stats-section {
+            background: white;
+            padding: 60px 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .stats-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            display: block;
+            font-size: 3.2rem;
+            font-weight: 200;
+            color: #3498db;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        /* Comparison Section */
+        .comparison-section {
+            background: white;
+            padding: 80px 40px;
+        }
+        
+        .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+        
+        .comparison-card {
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .comparison-card.before {
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .comparison-card.after {
+            border-left: 4px solid #27ae60;
+        }
+        
+        .comparison-card h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+        
+        .time-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+        }
+        
+        .time-item:last-child {
+            border-bottom: none;
+            margin-top: 15px;
+            padding-top: 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .time-item .time {
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        /* Demo Section */
+        .demo-section {
+            background: #f8f9fa;
+            padding: 80px 40px;
+        }
+        
+        .demo-section .section-title {
+            margin-bottom: 15px;
+        }
+        
+        .demo-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .demo-card {
+            background: white;
+            padding: 35px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #2c3e50;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+        
+        .demo-card:hover {
+            border-color: #3498db;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .demo-card .card-icon {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        
+        .demo-card h4 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+        
+        .demo-card p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .demo-card .badge {
+            display: inline-block;
+            background: #ecf0f1;
+            color: #7f8c8d;
+            padding: 6px 14px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Features Section */
+        .features-section {
+            background: white;
+            padding: 80px 40px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+        
+        .feature-item h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            line-height: 1.7;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        footer h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        
+        footer .credit {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .comparison-grid,
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .stats-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OpenClaw for Educators</h1>
+        <p class="tagline">Professional teaching resources in minutes, not hours</p>
+        <a href="#demo" class="cta-button">View Demo Resources</a>
+    </header>
+    
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">99%</span>
+                <span class="stat-label">Time Reduction</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Hours Saved Weekly</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2 min</span>
+                <span class="stat-label">Resource Creation</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Classroom Ready</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="comparison-section">
+        <div class="section-container">
+            <h2 class="section-title">Time Investment Comparison</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card before">
+                    <h3>Traditional Approach</h3>
+                    <div class="time-item">
+                        <span>Lesson Plan Development</span>
+                        <span class="time">45 min</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Presentation Creation</span>
+                        <span class="time">90 min</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Worksheet Design</span>
+                        <span class="time">60 min</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Assessment Materials</span>
+                        <span class="time">30 min</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Total Investment</span>
+                        <span class="time">3.5 hours</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-card after">
+                    <h3>OpenClaw Approach</h3>
+                    <div class="time-item">
+                        <span>Lesson Plan Development</span>
+                        <span class="time" style="color: #27ae60;">30 sec</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Presentation Creation</span>
+                        <span class="time" style="color: #27ae60;">30 sec</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Worksheet Design</span>
+                        <span class="time" style="color: #27ae60;">30 sec</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Assessment Materials</span>
+                        <span class="time" style="color: #27ae60;">30 sec</span>
+                    </div>
+                    <div class="time-item">
+                        <span>Total Investment</span>
+                        <span class="time" style="color: #27ae60;">2 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="demo-section" id="demo">
+        <div class="section-container">
+            <h2 class="section-title">Sample Teaching Resources</h2>
+            <p class="demo-subtitle">Complete lesson package created in 2 minutes: Photosynthesis (Secondary Level)</p>
+            
+            <div class="demo-grid">
+                <a href="Lesson_Plan_Pro.html" class="demo-card">
+                    <div class="card-icon">📋</div>
+                    <h4>Lesson Plan</h4>
+                    <p>Comprehensive 60-minute lesson structure with learning objectives, activities, and assessment criteria aligned to curriculum standards.</p>
+                    <span class="badge">Professional Format</span>
+                </a>
+                
+                <a href="Presentation_Pro.html" class="demo-card">
+                    <div class="card-icon">📊</div>
+                    <h4>Presentation Slides</h4>
+                    <p>17 professionally designed slides with clear content hierarchy, visual aids, and structured learning progression.</p>
+                    <span class="badge">Presentation Ready</span>
+                </a>
+                
+                <a href="Worksheet_Pro.html" class="demo-card">
+                    <div class="card-icon">📝</div>
+                    <h4>Student Worksheet</h4>
+                    <p>45-mark assessment covering multiple question types: diagram analysis, structured response, and application questions with complete marking scheme.</p>
+                    <span class="badge">Assessment Ready</span>
+                </a>
+                
+                <a href="Quiz_Pro.html" class="demo-card">
+                    <div class="card-icon">✓</div>
+                    <h4>Topic Quiz</h4>
+                    <p>30-mark summative assessment with objective and subjective questions, timing guidelines, and comprehensive answer key.</p>
+                    <span class="badge">Evaluation Ready</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features-section">
+        <div class="section-container">
+            <h2 class="section-title">Platform Capabilities</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📋</div>
+                    <h3>Curriculum-Aligned Plans</h3>
+                    <p>Comprehensive lesson structures with clear objectives, success criteria, and assessment strategies.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>Professional Presentations</h3>
+                    <p>Clear, well-structured slide content designed for effective classroom delivery.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">📝</div>
+                    <h3>Assessment Materials</h3>
+                    <p>Varied question types with complete marking schemes for formative and summative evaluation.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">📚</div>
+                    <h3>Cross-Curricular Support</h3>
+                    <p>Resources for all subjects and grade levels from primary through tertiary education.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rapid Generation</h3>
+                    <p>Natural language input produces complete teaching packages in minutes.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>Quality Assurance</h3>
+                    <p>Professional formatting and pedagogically sound content structure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h3>Professional Development with Garett Wong</h3>
+        <p>Enhance your teaching efficiency with AI-powered resource creation</p>
+        <p class="credit">Generated by OpenClaw AI | Professional Education Technology</p>
+    </footer>
+</body>
+</html>

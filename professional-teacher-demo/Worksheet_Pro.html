@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Worksheet - Photosynthesis | Secondary Science</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f8f9fa;
+            padding: 30px;
+        }
+        
+        .document {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 70px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        
+        .document-header {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .document-header h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #2c3e50;
+        }
+        
+        .marks-badge {
+            background: #3498db;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        
+        .student-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .student-info label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .student-info input {
+            border: none;
+            border-bottom: 2px solid #bdc3c7;
+            padding: 8px 0;
+            font-size: 1rem;
+            width: 100%;
+            background: transparent;
+        }
+        
+        .student-info input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .section-marks {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        .question-block {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+        
+        .question-block p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .question-number {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .answer-line {
+            border-bottom: 1px solid #bdc3c7;
+            margin: 15px 0;
+            height: 30px;
+        }
+        
+        .word-bank {
+            background: #ecf0f1;
+            padding: 20px 25px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border: 2px solid #bdc3c7;
+        }
+        
+        .word-bank h4 {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .word-bank p {
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #2c3e50;
+        }
+        
+        .matching-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .matching-table td {
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            vertical-align: middle;
+        }
+        
+        .matching-table td:first-child {
+            font-weight: 600;
+            width: 40%;
+        }
+        
+        .answer-box {
+            width: 45px;
+            height: 35px;
+            border: 2px solid #bdc3c7;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 5px;
+        }
+        
+        .text-area {
+            width: 100%;
+            border: 2px solid #e0e0e0;
+            padding: 15px;
+            font-size: 0.95rem;
+            min-height: 90px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: inherit;
+        }
+        
+        .text-area:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .diagram-area {
+            background: white;
+            border: 2px solid #bdc3c7;
+            padding: 40px;
+            margin: 20px 0;
+            text-align: center;
+            min-height: 280px;
+            border-radius: 4px;
+        }
+        
+        .diagram-area p {
+            color: #95a5a6;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+        
+        .bonus-section {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 30px;
+            border-radius: 4px;
+            border: 2px solid #667eea;
+            margin-top: 30px;
+        }
+        
+        .bonus-section h3 {
+            font-size: 1.2rem;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .marking-scheme {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-top: 3px solid #3498db;
+        }
+        
+        .marking-scheme h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .marking-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .marking-table th {
+            background: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .marking-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .grading-scale {
+            margin-top: 25px;
+        }
+        
+        .grading-scale h4 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .grading-scale ul {
+            margin-left: 20px;
+        }
+        
+        .grading-scale li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .print-btn {
+            background: #3498db;
+            color: white;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 30px;
+            font-weight: 500;
+        }
+        
+        .print-btn:hover {
+            background: #2980b9;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+        
+        @media print {
+            body { background: white; padding: 0; }
+            .document { box-shadow: none; padding: 40px; }
+            .print-btn { display: none; }
+            .answer-line { border-color: #999; }
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <div class="document-header">
+            <h1>Assessment: Photosynthesis</h1>
+            <span class="marks-badge">Total: 45 Marks</span>
+        </div>
+        
+        <div class="student-info">
+            <div>
+                <label>Student Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Class</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Date</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <!-- Part A -->
+        <h2>Section A: Diagram Analysis <span class="section-marks">8 marks</span></h2>
+        <p>Label the components of the photosynthesis process diagram:</p>
+        
+        <div class="word-bank">
+            <h4>Term Bank</h4>
+            <p>Carbon Dioxide | Water | Light Energy | Oxygen | Glucose | Chloroplast</p>
+        </div>
+        
+        <div class="diagram-area">
+            <p>[Diagram: Student to illustrate and label photosynthesis process]</p>
+            <p style="font-size: 0.85rem; margin-top: 20px;">
+                Instructions: Draw arrows indicating inputs and outputs. Label all components.
+            </p>
+        </div>
+
+        <!-- Part B -->
+        <h2>Section B: Terminology Application <span class="section-marks">10 marks</span></h2>
+        <p>Complete the statements using appropriate scientific terminology:</p>
+        
+        <div class="word-bank">
+            <h4>Term Bank</h4>
+            <p>photosynthesis | chlorophyll | oxygen | glucose | carbon dioxide | water | stomata | chloroplast | endothermic | anabolic</p>
+        </div>
+        
+        <div class="question-block">
+            <p><span class="question-number">1</span> The process by which plants convert light energy into chemical energy is termed _________________.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">2</span> The green pigment responsible for light absorption is _________________.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">3</span> Atmospheric _________________ enters leaves through stomatal pores.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">4</span> _________________ is transported from roots to leaves via xylem tissue.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">5</span> The process is classified as _________________ because it requires energy input.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">6</span> The carbohydrate product of photosynthesis is _________________.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">7</span> _________________ is released as a metabolic byproduct.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">8</span> Photosynthesis occurs within organelles called _________________.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">9</span> Gas exchange occurs through _________________ on the leaf surface.</p>
+            <div class="answer-line"></div>
+            
+            <p><span class="question-number">10</span> The process is _________________ because it builds complex molecules from simpler ones.</p>
+            <div class="answer-line"></div>
+        </div>
+
+        <!-- Part C -->
+        <h2>Section C: Concept Matching <span class="section-marks">5 marks</span></h2>
+        <p>Match each term with its correct definition:</p>
+        
+        <table class="matching-table">
+            <tr>
+                <td><strong>1. Photo-</strong></td>
+                <td>A. Pigment molecule</td>
+                <td><input type="text" class="answer-box"></td>
+            </tr>
+            <tr>
+                <td><strong>2. Synthesis</strong></td>
+                <td>B. Metabolic byproduct</td>
+                <td><input type="text" class="answer-box"></td>
+            </tr>
+            <tr>
+                <td><strong>3. Chlorophyll</strong></td>
+                <td>C. Light</td>
+                <td><input type="text" class="answer-box"></td>
+            </tr>
+            <tr>
+                <td><strong>4. Glucose</strong></td>
+                <td>D. Construction</td>
+                <td><input type="text" class="answer-box"></td>
+            </tr>
+            <tr>
+                <td><strong>5. Oxygen</strong></td>
+                <td>E. Energy product</td>
+                <td><input type="text" class="answer-box"></td>
+            </tr>
+        </table>
+
+        <!-- Part D -->
+        <h2>Section D: Statement Evaluation <span class="section-marks">5 marks</span></h2>
+        <p>Indicate whether each statement is TRUE (T) or FALSE (F):</p>
+        
+        <div class="question-block">
+            <p><span class="question-number">1</span> _____ Plants obtain carbon from soil nutrients.</p>
+            <p><span class="question-number">2</span> _____ Photosynthesis occurs primarily in root tissues.</p>
+            <p><span class="question-number">3</span> _____ Oxygen is produced during the light-dependent reactions.</p>
+            <p><span class="question-number">4</span> _____ Chlorophyll absorbs light across the entire electromagnetic spectrum.</p>
+            <p><span class="question-number">5</span> _____ Glucose serves as the primary energy storage molecule in plants.</p>
+        </div>
+
+        <!-- Part E -->
+        <h2>Section E: Structured Response <span class="section-marks">12 marks</span></h2>
+        <p>Provide comprehensive responses:</p>
+        
+        <div class="question-block">
+            <p><strong>1. Define photosynthesis using scientific terminology. (2 marks)</strong></p>
+            <textarea class="text-area" placeholder="Your response..."></textarea>
+            
+            <p><strong>2. Identify and explain three essential requirements for photosynthesis. (3 marks)</strong></p>
+            <div class="answer-line"></div>
+            <div class="answer-line"></div>
+            <div class="answer-line"></div>
+            
+            <p><strong>3. Explain the function of chlorophyll in the photosynthetic process. (2 marks)</strong></p>
+            <textarea class="text-area" placeholder="Your response..."></textarea>
+            
+            <p><strong>4. Discuss two ecological roles of photosynthetic organisms. (4 marks)</strong></p>
+            <p><em>Role 1:</em></p>
+            <textarea class="text-area" placeholder="First ecological role..."></textarea>
+            <p><em>Role 2:</em></p>
+            <textarea class="text-area" placeholder="Second ecological role..."></textarea>
+            
+            <p><strong>5. Construct the word equation for photosynthesis. (1 mark)</strong></p>
+            <div class="answer-line"></div>
+        </div>
+
+        <!-- Part F -->
+        <h2>Section F: Extended Response <span class="section-marks">5 marks</span></h2>
+        <p>Compose a paragraph (5-7 sentences) explaining how environmental factors might limit the rate of photosynthesis in natural ecosystems.</p>
+        
+        <div class="question-block">
+            <textarea class="text-area" style="min-height: 140px;" placeholder="Your extended response..."></textarea>
+        </div>
+
+        <!-- Bonus -->
+        <div class="bonus-section">
+            <h3>Bonus Question (2 marks)</h3>
+            <p><strong>Explain the relationship between photosynthesis and atmospheric composition throughout Earth's history.</strong></p>
+            <textarea class="text-area" placeholder="Bonus response..."></textarea>
+        </div>
+
+        <!-- Marking Scheme -->
+        <div class="marking-scheme">
+            <h3>Assessment Criteria</h3>
+            <p><strong>Total: 45 marks + 2 bonus</strong></p>
+            
+            <table class="marking-table">
+                <tr>
+                    <th>Section</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>A - Diagram Analysis</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>B - Terminology Application</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>C - Concept Matching</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>D - Statement Evaluation</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>E - Structured Response</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>F - Extended Response</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Bonus</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            
+            <div class="grading-scale">
+                <h4>Performance Levels:</h4>
+                <ul>
+                    <li><strong>40-45:</strong> Excellent - Comprehensive understanding demonstrated</li>
+                    <li><strong>35-39:</strong> Proficient - Strong conceptual grasp</li>
+                    <li><strong>28-34:</strong> Competent - Adequate understanding</li>
+                    <li><strong>20-27:</strong> Developing - Partial understanding</li>
+                    <li><strong>Below 20:</strong> Beginning - Requires additional support</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generated by OpenClaw AI | Professional Teaching Resources</p>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">Print Assessment</button>
+    </div>
+</body>
+</html>

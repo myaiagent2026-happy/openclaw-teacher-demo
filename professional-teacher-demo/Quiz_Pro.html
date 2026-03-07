@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summative Quiz - Photosynthesis | Secondary Science</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f8f9fa;
+            padding: 30px;
+        }
+        
+        .document {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 70px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        
+        .document-header {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .document-header h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #2c3e50;
+        }
+        
+        .marks-badge {
+            background: #3498db;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        
+        .timer-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #34495e;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .timer-display {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .timer-label {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        
+        body {
+            padding-top: 80px;
+        }
+        
+        .student-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .student-info label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .student-info input {
+            border: none;
+            border-bottom: 2px solid #bdc3c7;
+            padding: 8px 0;
+            font-size: 1rem;
+            width: 100%;
+            background: transparent;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .section-marks {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        .question-block {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .question-number {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .options {
+            margin: 15px 0 0 40px;
+        }
+        
+        .option {
+            margin: 12px 0;
+            padding: 12px 18px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .option:hover {
+            border-color: #3498db;
+            background: #f0f8ff;
+        }
+        
+        .option input {
+            margin-right: 12px;
+        }
+        
+        .option label {
+            cursor: pointer;
+            display: block;
+        }
+        
+        .answer-line {
+            border-bottom: 1px solid #bdc3c7;
+            margin: 15px 0;
+            height: 30px;
+        }
+        
+        .text-area {
+            width: 100%;
+            border: 2px solid #e0e0e0;
+            padding: 15px;
+            font-size: 0.95rem;
+            min-height: 80px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: inherit;
+        }
+        
+        .text-area:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .marking-scheme {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-top: 3px solid #3498db;
+        }
+        
+        .marking-scheme h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .marking-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .marking-table th {
+            background: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .marking-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .grading-scale {
+            margin-top: 25px;
+        }
+        
+        .grading-scale h4 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .grading-scale ul {
+            margin-left: 20px;
+        }
+        
+        .grading-scale li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .print-btn {
+            background: #3498db;
+            color: white;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 30px;
+            font-weight: 500;
+        }
+        
+        .print-btn:hover {
+            background: #2980b9;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+        
+        .instructions {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 4px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .instructions h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ul {
+            margin-left: 20px;
+        }
+        
+        .instructions li {
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+        
+        @media print {
+            .timer-bar { display: none; }
+            body { background: white; padding: 0; padding-top: 0; }
+            .document { box-shadow: none; padding: 40px; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="timer-bar">
+        <div>
+            <div class="timer-label">Time Remaining</div>
+            <div class="timer-display" id="timer">20:00</div>
+        </div>
+        <div>
+            <div class="timer-label">Assessment Duration</div>
+            <div style="font-size: 1rem;">20 Minutes</div>
+        </div>
+    </div>
+    
+    <div class="document">
+        <div class="document-header">
+            <h1>Summative Assessment: Photosynthesis</h1>
+            <span class="marks-badge">Total: 30 Marks</span>
+        </div>
+        
+        <div class="instructions">
+            <h4>Assessment Guidelines</h4>
+            <ul>
+                <li>Read all questions carefully before responding</li>
+                <li>Write clearly and use appropriate scientific terminology</li>
+                <li>Show all working for calculation questions</li>
+                <li>Manage your time: approximately 2 minutes per mark</li>
+            </ul>
+        </div>
+        
+        <div class="student-info">
+            <div>
+                <label>Student Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Class</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Date</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <!-- Part A: Multiple Choice -->
+        <h2>Section A: Objective Questions <span class="section-marks">10 marks</span></h2>
+        <p>Select the most appropriate response:</p>
+        
+        <div class="question-block">
+            <p><span class="question-number">1</span><strong>What is the primary function of chlorophyll in photosynthesis?</strong></p>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="q1" id="q1a">
+                    <label for="q1a">A) Carbon dioxide absorption</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1b">
+                    <label for="q1b">B) Light energy capture</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1c">
+                    <label for="q1c">C) Water transport</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1d">
+                    <label for="q1d">D) Glucose storage</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <p><span class="question-number">2</span><strong>Where does photosynthesis primarily occur in plants?</strong></p>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="q2" id="q2a">
+                    <label for="q2a">A) Root cortex</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2b">
+                    <label for="q2b">B) Stem xylem</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2c">
+                    <label for="q2c">C) Leaf mesophyll</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2d">
+                    <label for="q2d">D) Flower petals</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <p><span class="question-number">3</span><strong>Which gas is released as a byproduct of photosynthesis?</strong></p>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="q3" id="q3a">
+                    <label for="q3a">A) Carbon dioxide (CO₂)</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3b">
+                    <label for="q3b">B) Oxygen (O₂)</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3c">
+                    <label for="q3c">C) Nitrogen (N₂)</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3d">
+                    <label for="q3d">D) Hydrogen (H₂)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <p><span class="question-number">4</span><strong>What is the primary carbohydrate product of photosynthesis?</strong></p>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="q4" id="q4a">
+                    <label for="q4a">A) Sucrose</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4b">
+                    <label for="q4b">B) Starch</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4c">
+                    <label for="q4c">C) Glucose</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4d">
+                    <label for="q4d">D) Cellulose</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <p><span class="question-number">5</span><strong>Photosynthesis is classified as which type of metabolic process?</strong></p>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="q5" id="q5a">
+                    <label for="q5a">A) Catabolic and endothermic</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5b">
+                    <label for="q5b">B) Anabolic and endothermic</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5c">
+                    <label for="q5c">C) Catabolic and exothermic</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5d">
+                    <label for="q5d">D) Anabolic and exothermic</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part B: True/False -->
+        <h2>Section B: Statement Evaluation <span class="section-marks">10 marks</span></h2>
+        <p>Indicate whether each statement is TRUE (T) or FALSE (F):</p>
+        
+        <div class="question-block">
+            <p><span class="question-number">1</span>_____ Plants obtain their carbon source primarily from soil organic matter.</p>
+            <p><span class="question-number">2</span>_____ Photosynthesis can occur in the absence of light.</p>
+            <p><span class="question-number">3</span>_____ Chlorophyll absorbs light most efficiently in the green wavelengths.</p>
+            <p><span class="question-number">4</span>_____ Stomatal closure would limit carbon dioxide uptake.</p>
+            <p><span class="question-number">5</span>_____ Oxygen produced during photosynthesis originates from carbon dioxide.</p>
+        </div>
+
+        <!-- Part C: Structured Response -->
+        <h2>Section C: Structured Response <span class="section-marks">10 marks</span></h2>
+        <p>Provide comprehensive responses to the following:</p>
+        
+        <div class="question-block">
+            <p><strong>1. Construct the word equation for photosynthesis and explain the energy transformation involved. (4 marks)</strong></p>
+            <div class="answer-line"></div>
+            <div class="answer-line"></div>
+            <div class="answer-line"></div>
+        </div>
+        
+        <div class="question-block">
+            <p><strong>2. Complete the following: (3 marks)</strong></p>
+            <p>During photosynthesis, plants absorb _____________ from the atmosphere and _____________ from the soil.</p>
+            <div class="answer-line"></div>
+            <p>Light energy is converted into _____________ energy stored in glucose.</p>
+            <div class="answer-line"></div>
+            <p>The byproduct _____________ is released through stomata.</p>
+            <div class="answer-line"></div>
+        </div>
+        
+        <div class="question-block">
+            <p><strong>3. Explain three ecological roles of photosynthetic organisms. (3 marks)</strong></p>
+            <div class="answer-line"></div>
+            <div class="answer-line"></div>
+            <div class="answer-line"></div>
+        </div>
+
+        <!-- Marking Scheme -->
+        <div class="marking-scheme">
+            <h3>Assessment Criteria</h3>
+            <p><strong>Total: 30 marks</strong></p>
+            
+            <table class="marking-table">
+                <tr>
+                    <th>Section</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>A - Objective Questions</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>B - Statement Evaluation</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>C - Structured Response</td>
+                    <td>10</td>
+                </tr>
+            </table>
+            
+            <div class="grading-scale">
+                <h4>Performance Levels:</h4>
+                <ul>
+                    <li><strong>27-30:</strong> Excellent - Comprehensive mastery demonstrated</li>
+                    <li><strong>24-26:</strong> Proficient - Strong conceptual understanding</li>
+                    <li><strong>18-23:</strong> Competent - Adequate grasp of concepts</li>
+                    <li><strong>12-17:</strong> Developing - Partial understanding</li>
+                    <li><strong>Below 12:</strong> Beginning - Requires additional instruction</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generated by OpenClaw AI | Professional Teaching Resources</p>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">Print Assessment</button>
+    </div>
+
+    <script>
+        // Countdown timer
+        let timeLeft = 20 * 60; // 20 minutes
+        const timerElement = document.getElementById('timer');
+        
+        setInterval(() => {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (timeLeft > 0) {
+                timeLeft--;
+            } else {
+                timerElement.textContent = 'Time Expired';
+                timerElement.style.color = '#e74c3c';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

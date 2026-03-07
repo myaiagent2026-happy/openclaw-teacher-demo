@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation - Photosynthesis | Secondary Science</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f5f6fa;
+            padding: 20px;
+        }
+        
+        .slide {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 70px 80px;
+            min-height: 520px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            border-radius: 3px;
+        }
+        
+        .slide-number {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        
+        .slide h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .slide h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #34495e;
+            margin: 25px 0 15px 0;
+        }
+        
+        .slide p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .slide ul, .slide ol {
+            margin-left: 35px;
+            margin-bottom: 25px;
+        }
+        
+        .slide li {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .highlight-box {
+            background: #eef2f7;
+            padding: 30px;
+            border-radius: 4px;
+            margin: 25px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .success-box {
+            background: #ecf9f1;
+            padding: 30px;
+            border-radius: 4px;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .success-box li {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        
+        .equation-box {
+            background: #2c3e50;
+            color: white;
+            padding: 35px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 25px 0;
+        }
+        
+        .equation-box .chemical {
+            font-size: 1.1rem;
+            margin-top: 15px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .title-slide {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .title-slide h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            color: #7f8c8d;
+            margin-top: 15px;
+            font-weight: 300;
+        }
+        
+        .question-slide {
+            text-align: center;
+        }
+        
+        .question-slide h2 {
+            margin-bottom: 35px;
+        }
+        
+        .answer-reveal {
+            background: #3498db;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 3px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .fact-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .fact-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            opacity: 0.6;
+        }
+        
+        .fact-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .fact-card p {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin: 0;
+        }
+        
+        @media print {
+            body { background: white; padding: 0; }
+            .slide { 
+                box-shadow: none; 
+                page-break-after: always;
+                margin: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .slide { padding: 40px; }
+            .slide h1 { font-size: 2rem; }
+            .slide p, .slide li { font-size: 1.1rem; }
+            .two-column { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title -->
+    <div class="slide title-slide">
+        <span class="slide-number">1 / 17</span>
+        <h1>Photosynthesis</h1>
+        <h2>Energy Conversion in Plants</h2>
+        <p class="subtitle">Secondary 2 | Integrated Science</p>
+    </div>
+
+    <!-- Slide 2: Learning Objectives -->
+    <div class="slide">
+        <span class="slide-number">2 / 17</span>
+        <h2>Learning Objectives</h2>
+        <div class="success-box">
+            <ul>
+                <li>Define photosynthesis using scientific terminology</li>
+                <li>Identify essential components for photosynthesis</li>
+                <li>Construct the word equation for photosynthesis</li>
+                <li>Analyze ecological significance of the process</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 3: Engaging Question -->
+    <div class="slide question-slide">
+        <span class="slide-number">3 / 17</span>
+        <h2>Consider This Question</h2>
+        <p style="font-size: 1.6rem; margin-bottom: 35px;">How do plants obtain energy for growth and metabolism?</p>
+        <ul style="text-align: left; display: inline-block; font-size: 1.3rem;">
+            <li>Do they consume other organisms?</li>
+            <li>Do they absorb nutrients from soil?</li>
+            <li>How do they differ from animals?</li>
+        </ul>
+        <div class="answer-reveal" style="margin-top: 40px;">
+            Plants synthesize their own energy source
+        </div>
+    </div>
+
+    <!-- Slide 4: Definition -->
+    <div class="slide">
+        <span class="slide-number">4 / 17</span>
+        <h2>Defining Photosynthesis</h2>
+        <div class="highlight-box">
+            <p style="font-size: 2rem; text-align: center; margin: 0;">
+                <strong>PHOTO</strong> = Light
+            </p>
+            <p style="font-size: 2rem; text-align: center; margin-top: 20px;">
+                <strong>SYNTHESIS</strong> = Composition/Construction
+            </p>
+        </div>
+        <p style="font-size: 1.6rem; text-align: center; margin-top: 40px; color: #3498db; font-weight: 500;">
+            Photosynthesis: The conversion of light energy into chemical energy
+        </p>
+    </div>
+
+    <!-- Slide 5: Process Overview -->
+    <div class="slide">
+        <span class="slide-number">5 / 17</span>
+        <h2>Process Classification</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>Photosynthesis is characterized as:</strong></p>
+        <ul>
+            <li><strong>Anabolic</strong> - builds complex molecules from simpler ones</li>
+            <li><strong>Endothermic</strong> - requires energy input</li>
+            <li><strong>Photoautotrophic</strong> - uses light as energy source</li>
+        </ul>
+        <div class="highlight-box" style="margin-top: 30px;">
+            <p style="font-size: 1.3rem; text-align: center; margin: 0;">
+                <strong>Plants are primary producers in ecosystems</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 6: Requirements -->
+    <div class="slide">
+        <span class="slide-number">6 / 17</span>
+        <h2>Process Requirements</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 25px;"><strong>Essential components:</strong></p>
+        <ul>
+            <li><strong>Carbon Dioxide (CO₂)</strong> - atmospheric source</li>
+            <li><strong>Water (H₂O)</strong> - absorbed through roots</li>
+            <li><strong>Light Energy</strong> - electromagnetic spectrum (400-700nm)</li>
+        </ul>
+        <div class="highlight-box">
+            <p style="font-size: 1.2rem;"><strong>Plus:</strong> Chlorophyll - light-absorbing pigment in chloroplasts</p>
+        </div>
+    </div>
+
+    <!-- Slide 7: Location -->
+    <div class="slide">
+        <span class="slide-number">7 / 17</span>
+        <h2>Site of Photosynthesis</h2>
+        <p style="font-size: 1.5rem; margin-bottom: 30px;"><strong>Where does photosynthesis occur?</strong></p>
+        <div class="highlight-box">
+            <p style="font-size: 1.4rem;">Primary location: <strong>Mesophyll cells in leaves</strong></p>
+            <p style="font-size: 1.1rem; margin-top: 15px;">Specifically within chloroplasts containing chlorophyll</p>
+        </div>
+        <p style="font-size: 1.2rem; margin-top: 30px;">Chlorophyll functions as a light-harvesting complex, absorbing photons and converting light energy into chemical energy.</p>
+    </div>
+
+    <!-- Slide 8: Process Steps -->
+    <div class="slide">
+        <span class="slide-number">8 / 17</span>
+        <h2>Process Mechanism</h2>
+        <ol>
+            <li><strong>CO₂ uptake</strong> - diffusion through stomata</li>
+            <li><strong>H₂O transport</strong> - xylem-mediated delivery</li>
+            <li><strong>Light absorption</strong> - chlorophyll excitation</li>
+            <li><strong>Energy conversion</strong> - synthesis of glucose</li>
+            <li><strong>O₂ release</strong> - diffusion to atmosphere</li>
+        </ol>
+    </div>
+
+    <!-- Slide 9: Equation -->
+    <div class="slide">
+        <span class="slide-number">9 / 17</span>
+        <h2>Chemical Equation</h2>
+        <div class="equation-box">
+            <p>Carbon Dioxide + Water + Light Energy</p>
+            <p style="font-size: 2rem; margin: 15px 0;">↓</p>
+            <p>GLUCOSE + OXYGEN</p>
+            <p class="chemical">6CO₂ + 6H₂O + Light → C₆H₁₂O₆ + 6O₂</p>
+        </div>
+    </div>
+
+    <!-- Slide 10: Glucose Utilization -->
+    <div class="slide">
+        <span class="slide-number">10 / 17</span>
+        <h2>Glucose Utilization</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 30px;"><strong>Metabolic fates of synthesized glucose:</strong></p>
+        <div class="success-box">
+            <ul>
+                <li><strong>Cellular respiration</strong> - ATP production for metabolic processes</li>
+                <li><strong>Biosynthesis</strong> - formation of cellulose, proteins, lipids</li>
+                <li><strong>Storage</strong> - conversion to starch for later use</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 11: Ecological Significance -->
+    <div class="slide">
+        <span class="slide-number">11 / 17</span>
+        <h2>Ecological Significance</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 25px;"><strong>Environmental impact:</strong></p>
+        <div class="two-column">
+            <div class="fact-card">
+                <div class="icon">O₂</div>
+                <h4>Oxygen Production</h4>
+                <p>Atmospheric O₂ for aerobic respiration</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">CO₂</div>
+                <h4>Carbon Sequestration</h4>
+                <p>Atmospheric CO₂ reduction</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">C₆H₁₂O₆</div>
+                <h4>Energy Storage</h4>
+                <p>Chemical energy in biomass</p>
+            </div>
+            <div class="fact-card">
+                <div class="icon">ECO</div>
+                <h4>Food Web Foundation</h4>
+                <p>Primary production base</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 12: Research Data -->
+    <div class="slide">
+        <span class="slide-number">12 / 17</span>
+        <h2>Research Findings</h2>
+        <div class="two-column">
+            <div class="fact-card">
+                <h4>Global Oxygen</h4>
+                <p>Photosynthetic organisms produce &gt;99% of atmospheric oxygen</p>
+            </div>
+            <div class="fact-card">
+                <h4>Marine Contribution</h4>
+                <p>Phytoplankton account for ~50% of global photosynthesis</p>
+            </div>
+            <div class="fact-card">
+                <h4>Carbon Fixation</h4>
+                <p>~120 billion tons of carbon fixed annually</p>
+            </div>
+            <div class="fact-card">
+                <h4>Evolutionary History</h4>
+                <p>Process evolved ~3.5 billion years ago in cyanobacteria</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 13: Review -->
+    <div class="slide question-slide">
+        <span class="slide-number">13 / 17</span>
+        <h2>Knowledge Check</h2>
+        <div style="text-align: left; display: inline-block; font-size: 1.2rem;">
+            <p><strong>Q1:</strong> What is the etymology of "photosynthesis"?</p>
+            <div class="answer-reveal" style="font-size: 0.95rem; padding: 10px 20px;">Photo (light) + synthesis (composition)</div>
+            
+            <p style="margin-top: 25px;"><strong>Q2:</strong> Identify three essential components.</p>
+            <div class="answer-reveal" style="font-size: 0.95rem; padding: 10px 20px;">CO₂, H₂O, Light Energy</div>
+            
+            <p style="margin-top: 25px;"><strong>Q3:</strong> What gas is released?</p>
+            <div class="answer-reveal" style="font-size: 0.95rem; padding: 10px 20px;">Oxygen (O₂)</div>
+            
+            <p style="margin-top: 25px;"><strong>Q4:</strong> Where does the process occur?</p>
+            <div class="answer-reveal" style="font-size: 0.95rem; padding: 10px 20px;">Chloroplasts in mesophyll cells</div>
+        </div>
+    </div>
+
+    <!-- Slide 14: Activity -->
+    <div class="slide">
+        <span class="slide-number">14 / 17</span>
+        <h2>Structured Activity</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>Complete the following tasks:</strong></p>
+        <ol>
+            <li>Label the photosynthesis process diagram</li>
+            <li>Complete structured response questions</li>
+            <li>Match scientific terms with definitions</li>
+            <li>Analyze data on factors affecting photosynthesis rate</li>
+        </ol>
+    </div>
+
+    <!-- Slide 15: Exit Assessment -->
+    <div class="slide">
+        <span class="slide-number">15 / 17</span>
+        <h2>Exit Ticket Assessment</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 25px;"><strong>Respond to the following:</strong></p>
+        <ol style="font-size: 1.2rem;">
+            <li>Define photosynthesis using appropriate terminology <em style="color: #999;">(2 marks)</em></li>
+            <li>State three essential requirements for photosynthesis <em style="color: #999;">(3 marks)</em></li>
+            <li>Explain one ecological significance of photosynthesis <em style="color: #999;">(2 marks)</em></li>
+        </ol>
+    </div>
+
+    <!-- Slide 16: Summary -->
+    <div class="slide title-slide">
+        <span class="slide-number">16 / 17</span>
+        <h1>Key Learning Outcomes</h1>
+        <div class="success-box" style="text-align: left; display: inline-block; margin-top: 30px;">
+            <ul>
+                <li>Photosynthesis converts light energy to chemical energy</li>
+                <li>Essential components: CO₂, H₂O, light, chlorophyll</li>
+                <li>Products: glucose (energy storage) and oxygen (byproduct)</li>
+                <li>Process is fundamental to ecosystem energy flow</li>
+            </ul>
+        </div>
+        <p class="subtitle" style="margin-top: 30px;"><strong>Next Topic:</strong> Cellular Respiration</p>
+    </div>
+
+    <!-- Slide 17: Extension -->
+    <div class="slide">
+        <span class="slide-number">17 / 17</span>
+        <h2>Extension Activities</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 25px;"><strong>Select one task for independent study:</strong></p>
+        <ol style="font-size: 1.2rem;">
+            <li>Construct a detailed diagram showing leaf structure and gas exchange</li>
+            <li>Investigate factors affecting photosynthesis rate (light intensity, CO₂ concentration, temperature)</li>
+            <li>Write a comparative analysis: Photosynthesis vs. Cellular Respiration (300 words)</li>
+        </ol>
+    </div>
+
+    <div style="text-align: center; padding: 40px; color: #7f8c8d;">
+        <p><em>Generated by OpenClaw AI | Professional Teaching Resources</em></p>
+    </div>
+
+</body>
+</html>
