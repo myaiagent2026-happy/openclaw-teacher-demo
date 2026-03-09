@@ -1,0 +1,17 @@
+{
+  "version": "pro2",
+  "channel": "telegram",
+  "chatId": "8181930583",
+  "accountId": "default",
+  "journalPath": "E:\\openclaw_home\\.openclaw\\workspace\\session-journal\\telegram-8181930583.md",
+  "handoffPath": "E:\\openclaw_home\\.openclaw\\workspace\\session-journal\\handoff-latest.json",
+  "memoryPlan": "E:\\openclaw_home\\.openclaw\\workspace\\lancedb-pro2-memory-plan.md",
+  "memoryStore": "E:\\openclaw_home\\memory\\lancedb-pro",
+  "checkpointPolicy": "Save only important milestones, not every message.",
+  "recoveryPriority": [
+    "latest handoff",
+    "latest journal milestone",
+    "latest relevant LanceDB memory",
+    "current user instruction"
+  ]
+}
