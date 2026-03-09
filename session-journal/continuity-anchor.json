@@ -1,17 +1,13 @@
 {
-  "version": "pro2",
-  "channel": "telegram",
-  "chatId": "8181930583",
-  "accountId": "default",
-  "journalPath": "E:\\openclaw_home\\.openclaw\\workspace\\session-journal\\telegram-8181930583.md",
-  "handoffPath": "E:\\openclaw_home\\.openclaw\\workspace\\session-journal\\handoff-latest.json",
-  "memoryPlan": "E:\\openclaw_home\\.openclaw\\workspace\\lancedb-pro2-memory-plan.md",
-  "memoryStore": "E:\\openclaw_home\\memory\\lancedb-pro",
-  "checkpointPolicy": "Save only important milestones, not every message.",
-  "recoveryPriority": [
-    "latest handoff",
-    "latest journal milestone",
-    "latest relevant LanceDB memory",
-    "current user instruction"
-  ]
+  "status": "secondary-pointer",
+  "deprecatedAsCanonical": true,
+  "canonicalRoot": "E:\\openclaw_home\\.openclaw\\workspace\\continuity",
+  "instructionRegistry": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\INSTRUCTION-REGISTRY.md",
+  "projectRegistry": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\PROJECT-REGISTRY.json",
+  "latestHandoff": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\LATEST-HANDOFF.json",
+  "sessionLog": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\SESSION-LOG.md",
+  "unresolvedTasks": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\UNRESOLVED-TASKS.json",
+  "recoveryRules": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\RECOVERY-RULES.md",
+  "note": "Canonical continuity moved to workspace/continuity.",
+  "updatedAt": "2026-03-09 21:31 Asia/Shanghai"
 }

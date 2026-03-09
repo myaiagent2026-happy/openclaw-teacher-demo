@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "status": "authoritative",
+  "updatedAt": "2026-03-09 21:30 Asia/Shanghai",
+  "projects": [
+    {
+      "name": "USB-portable OpenClaw setup",
+      "status": "active",
+      "goal": "Keep OpenClaw runtime/state portable and USB-first across PCs.",
+      "importantPaths": [
+        "E:\\openclaw_home\\.openclaw\\workspace",
+        "E:\\openclaw_home\\state",
+        "E:\\openclaw_home\\memory"
+      ],
+      "importantDecisions": [
+        "USB-first runtime/state",
+        "avoid fixed drive letters",
+        "minimize host traces"
+      ],
+      "unresolvedIssues": [
+        "Continuity still depends partly on manual/semi-auto discipline"
+      ],
+      "lastMilestone": "Continuity repair architecture introduced in workspace continuity folder"
+    },
+    {
+      "name": "Gmail integration / monitoring / push",
+      "status": "working",
+      "goal": "Zero-token Gmail monitoring and alerting.",
+      "importantPaths": [
+        "E:\\openclaw_home\\google\\gmail_monitor.py",
+        "E:\\openclaw_home\\google",
+        "Scheduled Task: GmailMonitor"
+      ],
+      "importantDecisions": [
+        "reuse existing Google auth",
+        "zero-token monitoring preferred"
+      ],
+      "unresolvedIssues": [],
+      "lastMilestone": "Gmail monitor service deployed and remembered as working"
+    },
+    {
+      "name": "LanceDB / continuity / memory architecture",
+      "status": "active",
+      "goal": "Preserve important state across compaction, session/model/provider switches, and resets with low token cost.",
+      "importantPaths": [
+        "E:\\openclaw_home\\memory\\lancedb-pro",
+        "E:\\openclaw_home\\.openclaw\\workspace\\continuity",
+        "E:\\openclaw_home\\.openclaw\\workspace\\session-journal"
+      ],
+      "importantDecisions": [
+        "single canonical continuity layer in workspace continuity folder",
+        "LanceDB is optional retrieval cache, not source of truth",
+        "session JSONL logs are archive evidence, not canonical live continuity"
+      ],
+      "unresolvedIssues": [
+        "No true OpenClaw-native auto-journaling hook writable from this chat session",
+        "Legacy session-journal files need manual mirroring if kept"
+      ],
+      "lastMilestone": "Canonical continuity contract and registries created"
+    },
+    {
+      "name": "Math-note / LaTeX / PDF workflow",
+      "status": "active",
+      "goal": "Produce visually correct math notes/PDFs with QA loop.",
+      "importantPaths": [],
+      "importantDecisions": [
+        "render visually, detect defects, fix, re-render, re-check"
+      ],
+      "unresolvedIssues": [
+        "Need project-specific state refresh when resumed"
+      ],
+      "lastMilestone": "Workflow rule preserved in canonical instruction registry"
+    },
+    {
+      "name": "School SEN course notes / worksheets / teaching docs",
+      "status": "active",
+      "goal": "Prepare clear, non-overlapping teaching materials with correct template usage.",
+      "importantPaths": [
+        "Lesson1_PPT_NotebookLMStyle_v3.pptx"
+      ],
+      "importantDecisions": [
+        "approved template is frozen master",
+        "do not mix teaching notes and worksheets",
+        "avoid repeated lesson overlap when rejected"
+      ],
+      "unresolvedIssues": [],
+      "lastMilestone": "Rules preserved; exact current task state not refreshed in this repair"
+    },
+    {
+      "name": "GitHub Pages demo sites",
+      "status": "active",
+      "goal": "Maintain useful demo sites for teaching and recruitment.",
+      "importantPaths": [
+        "https://myaiagent2026-happy.github.io/hk-price-compare/app-v3.html",
+        "https://myaiagent2026-happy.github.io/price-check-designs/",
+        "https://myaiagent2026-happy.github.io/price-check-designs/design-v1-modern.html",
+        "https://myaiagent2026-happy.github.io/price-check-designs/design-v2-card.html",
+        "https://myaiagent2026-happy.github.io/openclaw-professional-education/"
+      ],
+      "importantDecisions": [
+        "use demos for student recruitment",
+        "verify links before claiming availability"
+      ],
+      "unresolvedIssues": [
+        "Some local demos are not yet confirmed publicly deployed",
+        "Dice game link/project not yet confirmed"
+      ],
+      "lastMilestone": "Confirmed price-checker public links and some local demo entry points"
+    },
+    {
+      "name": "Professional education recruiting/demo assets",
+      "status": "active",
+      "goal": "Use strong demos and education-themed assets for student recruitment.",
+      "importantPaths": [
+        "E:\\openclaw_home\\.openclaw\\workspace\\recruitment-chatbot-demo",
+        "E:\\openclaw_home\\.openclaw\\workspace\\demo-email-alert-recruitment",
+        "E:\\openclaw_home\\.openclaw\\workspace\\demo-c-photo-to-excel",
+        "https://myaiagent2026-happy.github.io/openclaw-professional-education/"
+      ],
+      "importantDecisions": [
+        "main 3 recruitment demos: smart chatbot, email alert assistant, photo-to-Excel"
+      ],
+      "unresolvedIssues": [
+        "Need one reliable inventory of all demos/links"
+      ],
+      "lastMilestone": "Main three recruitment-direction demos re-confirmed"
+    },
+    {
+      "name": "Website / homepage / client-reply / WhatsApp bot business ideas",
+      "status": "active",
+      "goal": "Support client replies, website builds, WhatsApp bot demos, and future CRM offerings.",
+      "importantPaths": [
+        "website-building-guide-hk.md"
+      ],
+      "importantDecisions": [
+        "simple business sites: Astro/custom HTML",
+        "CMS only when needed",
+        "separate SIM + WhatsApp Business for serious bot route",
+        "CRM backend behind WhatsApp is approved direction"
+      ],
+      "unresolvedIssues": [
+        "Real WhatsApp bot/CRM demo not yet implemented",
+        "Need exact LED TV monitor demo flow when resumed"
+      ],
+      "lastMilestone": "Recovered website/homepage and WhatsApp CS strategy from exports and re-saved"
+    },
+    {
+      "name": "n8n / automation learning direction",
+      "status": "active",
+      "goal": "Use n8n as backend automation engine behind OpenClaw, not the main student-facing topic.",
+      "importantPaths": [],
+      "importantDecisions": [
+        "n8n behind OpenClaw",
+        "Node.js-first, no Docker for teaching path"
+      ],
+      "unresolvedIssues": [],
+      "lastMilestone": "Direction recovered and re-saved"
+    },
+    {
+      "name": "Document beautification / Word / Excel / PowerPoint quality",
+      "status": "active",
+      "goal": "Produce professional, visually consistent documents and teaching materials.",
+      "importantPaths": [
+        "E:\\openclaw_home\\.openclaw\\workspace\\skills\\document-quality"
+      ],
+      "importantDecisions": [
+        "visual QA before sending",
+        "first-pass consistency matters"
+      ],
+      "unresolvedIssues": [],
+      "lastMilestone": "Document-quality skill exists and standards remembered"
+    }
+  ]
+}

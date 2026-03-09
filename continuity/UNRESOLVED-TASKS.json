@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "status": "authoritative",
+  "updatedAt": "2026-03-09 21:30 Asia/Shanghai",
+  "tasks": [
+    {
+      "id": "continuity-auto-hooks",
+      "title": "Replace manual/semi-auto continuity discipline with verified automatic hooks if OpenClaw/plugin surface allows",
+      "status": "open",
+      "priority": "high",
+      "whyOpen": "Current chat session can create/update canonical files but cannot honestly claim a new automatic OpenClaw pre-reply/post-task hook is wired and active.",
+      "nextEvidenceNeeded": "Plugin/config-level hook implementation and verification logs"
+    },
+    {
+      "id": "model-switch-root-cause",
+      "title": "Audit exact root cause of Telegram DM continuity loss across model/provider/session changes",
+      "status": "open",
+      "priority": "high",
+      "whyOpen": "Evidence shows continuity loss after switch/reset, but exact platform-level cause is not fully isolated.",
+      "nextEvidenceNeeded": "Compare session lifecycle, reset/deleted logs, and OpenClaw behavior around model reset/switch"
+    },
+    {
+      "id": "demo-inventory",
+      "title": "Build one verified demo inventory with all local entry points and public links",
+      "status": "open",
+      "priority": "medium",
+      "whyOpen": "Past answers missed demos because inventory was partial.",
+      "nextEvidenceNeeded": "Workspace-wide scan + verified public URLs"
+    },
+    {
+      "id": "whatsapp-crm-demo",
+      "title": "Build serious WhatsApp Business + CRM demo for teaching/recruitment",
+      "status": "open",
+      "priority": "medium",
+      "whyOpen": "Direction approved, implementation not yet built.",
+      "nextEvidenceNeeded": "SIM/number ready, chosen stack, actual build files"
+    }
+  ]
+}

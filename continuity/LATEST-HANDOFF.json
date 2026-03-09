@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "status": "authoritative",
+  "updatedAt": "2026-03-09 21:30 Asia/Shanghai",
+  "sessionKey": "agent:main:telegram:direct:8181930583",
+  "sessionId": "27d9b7fb-eb62-4ed9-a955-53b4f0d3d0c0",
+  "channel": "telegram",
+  "chatId": "8181930583",
+  "user": "Garett Wong",
+  "currentModel": "openai-codex/gpt-5.4",
+  "currentProvider": "openai-codex",
+  "authoritativeFiles": {
+    "instructionRegistry": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\INSTRUCTION-REGISTRY.md",
+    "projectRegistry": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\PROJECT-REGISTRY.json",
+    "latestHandoff": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\LATEST-HANDOFF.json",
+    "sessionLog": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\SESSION-LOG.md",
+    "unresolvedTasks": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\UNRESOLVED-TASKS.json",
+    "recoveryRules": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\RECOVERY-RULES.md"
+  },
+  "activeProblem": "Continuity architecture was fragmented; single canonical continuity layer has now been created, but true OpenClaw-native auto-write hooks remain unavailable from this chat session.",
+  "lastCompletedStep": "Forensic audit completed; canonical instruction/project/handoff/session/recovery files created; legacy session-journal marked secondary.",
+  "currentTask": "Self-repair audit and continuity hardening requested by user.",
+  "remainingUnresolved": [
+    "No verified automatic pre-reply loader hook writable from this session",
+    "No verified automatic post-task journal writer hook writable from this session",
+    "Need future manual/semi-auto discipline to keep canonical continuity files fresh"
+  ],
+  "trustOrder": [
+    "continuity/LATEST-HANDOFF.json",
+    "continuity/INSTRUCTION-REGISTRY.md",
+    "continuity/PROJECT-REGISTRY.json",
+    "continuity/UNRESOLVED-TASKS.json",
+    "continuity/SESSION-LOG.md",
+    "LanceDB relevant memories",
+    "session/reset JSONL archives"
+  ]
+}

@@ -1,23 +1,7 @@
 {
-  "version": "pro2",
-  "updatedAt": "2026-03-09 08:32 Asia/Shanghai",
-  "channel": "telegram",
-  "chatId": "8181930583",
-  "user": "Garett Wong",
-  "previousModel": "gpt-5.x/codex (reported by user)",
-  "currentModel": "openai-codex/gpt-5.4",
-  "activeProblem": "OpenClaw 3.7 unexpectedly switched LLM and appears to have broken session continuity, causing loss of live conversation context.",
-  "currentTask": "Build LanceDB Pro2 Phase 2 continuity protection using low-token USB-local journal + handoff files.",
-  "lastCompletedStep": "Created LanceDB Pro2 memory plan and saved adoption decision to memory.",
-  "importantFiles": [
-    "E:\\openclaw_home\\.openclaw\\workspace\\lancedb-pro2-memory-plan.md",
-    "E:\\openclaw_home\\.openclaw\\workspace\\session-journal\\telegram-8181930583.md"
-  ],
-  "recoveryRules": [
-    "Use LanceDB for facts, decisions, preferences, lessons",
-    "Use session journal for milestone recovery only",
-    "Do not store full transcript",
-    "Keep replies short when possible"
-  ],
-  "nextStep": "Continue using compact checkpoints and update this handoff file after important model/session transitions."
+  "status": "secondary-manual-mirror",
+  "deprecatedAsCanonical": true,
+  "canonicalPath": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\LATEST-HANDOFF.json",
+  "note": "This file is no longer authoritative. Use continuity/LATEST-HANDOFF.json first.",
+  "lastMirrorUpdate": "2026-03-09 21:31 Asia/Shanghai"
 }
