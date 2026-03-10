@@ -1,0 +1,28 @@
+Daily OpenClaw research job.
+
+Goal:
+- Search for new information that could improve OpenClaw usage, Continuity Capsule, skills, memory/continuity, hooks, plugins, scheduling, retrieval, or related workflow reliability.
+
+Sources to check:
+- Web search for OpenClaw news / release notes / docs changes
+- YouTube for OpenClaw / OpenClaw skills / memory / agent workflow improvements
+- X/Twitter posts if surfaced by web search
+- Reddit posts if surfaced by web search
+- GitHub repos/issues/releases if surfaced by web search
+
+What to produce:
+- A short daily summary with only useful findings
+- Separate sections:
+  1. OpenClaw news / releases
+  2. Skills / plugins / tooling ideas
+  3. Continuity / memory / retrieval ideas relevant to Continuity Capsule
+  4. Recommended actions for our setup
+- Include links
+- Ignore hype with no practical value
+- Keep it concise but useful
+
+After writing the summary:
+1. Save it to `automation/outgoing/daily-openclaw-summary.txt`
+2. Email it to `garettwong@gmail.com` using:
+   `python E:\openclaw_home\google\send_summary_email.py --to garettwong@gmail.com --subject "Daily OpenClaw research summary" --body-file E:\openclaw_home\.openclaw\workspace\automation\outgoing\daily-openclaw-summary.txt`
+3. If email send succeeds, do not send duplicate chat output.
