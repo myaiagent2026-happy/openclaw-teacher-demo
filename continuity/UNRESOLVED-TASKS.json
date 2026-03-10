@@ -12,6 +12,14 @@
       "nextEvidenceNeeded": "Plugin/config-level hook implementation and verification logs"
     },
     {
+      "id": "continuity-capsule-active-window",
+      "title": "Make Continuity Capsule reliably preserve same-day active work for roughly 24 hours",
+      "status": "open",
+      "priority": "high",
+      "whyOpen": "Recent exact file-level work was not preserved across reset even though high-level continuity survived.",
+      "nextEvidenceNeeded": "Verified active capsule file/rule and successful same-day recovery after reset"
+    },
+    {
       "id": "model-switch-root-cause",
       "title": "Audit exact root cause of Telegram DM continuity loss across model/provider/session changes",
       "status": "open",

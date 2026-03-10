@@ -39,9 +39,9 @@
       "lastMilestone": "Gmail monitor service deployed and remembered as working"
     },
     {
-      "name": "LanceDB / continuity / memory architecture",
+      "name": "Continuity Capsule / continuity / memory architecture",
       "status": "active",
-      "goal": "Preserve important state across compaction, session/model/provider switches, and resets with low token cost.",
+      "goal": "Preserve same-day active work for roughly 24 hours and recover older work from USB notes across compaction, session/model/provider switches, and resets with low token cost.",
       "importantPaths": [
         "E:\\openclaw_home\\memory\\lancedb-pro",
         "E:\\openclaw_home\\.openclaw\\workspace\\continuity",
@@ -49,14 +49,17 @@
       ],
       "importantDecisions": [
         "single canonical continuity layer in workspace continuity folder",
+        "ACTIVE-CAPSULE.md is the short-term same-day layer",
+        "continuity/daily/YYYY-MM-DD.md stores dated USB recovery notes",
         "LanceDB is optional retrieval cache, not source of truth",
         "session JSONL logs are archive evidence, not canonical live continuity"
       ],
       "unresolvedIssues": [
         "No true OpenClaw-native auto-journaling hook writable from this chat session",
+        "Active same-day continuity still needs better exact task capture",
         "Legacy session-journal files need manual mirroring if kept"
       ],
-      "lastMilestone": "Canonical continuity contract and registries created"
+      "lastMilestone": "Continuity Capsule named; active capsule and daily-note layer introduced"
     },
     {
       "name": "Math-note / LaTeX / PDF workflow",

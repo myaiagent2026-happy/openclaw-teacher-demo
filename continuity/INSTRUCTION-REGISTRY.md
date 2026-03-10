@@ -26,6 +26,7 @@ Token strategy: load this file first; do not load full archives unless needed
 - Use existing Google auth at `E:\openclaw_home\google\`; do not re-ask for setup unless actually broken.
 - Prefer low-token continuity: compact milestones, not full transcript dumping.
 - For bulk pushes, check existing entries first and avoid duplicates.
+- Keep same-day active work in a small 24-hour Continuity Capsule; retrieve older work from dated USB notes when needed.
 
 ## Stable content/workflow rules
 - Document outputs: approved template = frozen master; do visual QA before sending.

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "authoritative",
-  "updatedAt": "2026-03-09 21:30 Asia/Shanghai",
+  "updatedAt": "2026-03-10T05:12:39.271Z",
   "sessionKey": "agent:main:telegram:direct:8181930583",
   "sessionId": "27d9b7fb-eb62-4ed9-a955-53b4f0d3d0c0",
   "channel": "telegram",
@@ -17,9 +17,9 @@
     "unresolvedTasks": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\UNRESOLVED-TASKS.json",
     "recoveryRules": "E:\\openclaw_home\\.openclaw\\workspace\\continuity\\RECOVERY-RULES.md"
   },
-  "activeProblem": "Continuity architecture was fragmented; single canonical continuity layer has now been created, but true OpenClaw-native auto-write hooks remain unavailable from this chat session.",
+  "activeProblem": "Continuity Capsule now has a named direction, but same-day exact task continuity is still too weak because true OpenClaw-native auto-write hooks remain unavailable from this chat session.",
   "lastCompletedStep": "Forensic audit completed; canonical instruction/project/handoff/session/recovery files created; legacy session-journal marked secondary.",
-  "currentTask": "Self-repair audit and continuity hardening requested by user.",
+  "currentTask": "Continuity Capsule improvement: preserve same-day active work for ~24 hours and retrieve older work from USB daily notes.",
   "remainingUnresolved": [
     "No verified automatic pre-reply loader hook writable from this session",
     "No verified automatic post-task journal writer hook writable from this session",
@@ -28,10 +28,15 @@
   "trustOrder": [
     "continuity/LATEST-HANDOFF.json",
     "continuity/INSTRUCTION-REGISTRY.md",
+    "continuity/ACTIVE-CAPSULE.md",
     "continuity/PROJECT-REGISTRY.json",
     "continuity/UNRESOLVED-TASKS.json",
     "continuity/SESSION-LOG.md",
     "LanceDB relevant memories",
     "session/reset JSONL archives"
-  ]
+  ],
+  "lastAutoRefreshAt": "2026-03-10T05:12:39.271Z",
+  "lastUserRequest": "Conversation info (untrusted metadata):\n```json\n{\n  \"message_id\": \"2586\",\n  \"sender_id\": \"8181930583\",\n  \"sender\": \"Garett Wong\",\n  \"timestamp\": \"Tue 2026-03-10 13:12 GMT+8\"\n}\n```\n\nSender (untrusted metadata):\n```json\n{\n  \"label\": \"Garett Wong (8181930583)\",\n  \"id\": \"8181930583\",\n  \"name\": \"Garett Wong\"\n}\n```\n\nSupplementary note so you understand my real intent:\n\nMy goal is NOT to make you load everything before every reply.\n\nMy real intent is:\n\n1. Before replying to me, check only the minimum necessary continuity information first.\n I want you to reload the few most important things, not the whole history.\n\n2. Keep token use low.\n Do not solve this by injecting huge files, large raw JSON, or too much history into every turn.\n\n3. I want a small, efficient “important notes first” system.\n In normal human words:\n before replying, check the short notebook first, not the whole library.\n\n4. The things I most care about you not forgetting are:\n - my durable rules / preferences\n - what main project we are currently doing\n - what is still unfinished / unresolved\n - the latest important handoff / milestone\n - any current temporary instruction that is critical right now\n\n5. I do NOT want:\n -",
+  "lastAssistantResponse": "[[reply_to_current]] Yes — understood clearly.\n\nThat is the right principle:\n\n## Your real target\nNot:\n- load everything\n- load whole history\n- inject huge files\n\nBut:\n- **load the smallest important notebook first**\n\n## The notebook should contain only:\n1. your durable rules\n2. current main project\n3. unresolved/open items\n4. latest important handoff/milestone\n5. any critical temporary instruction\n\n## What this means technically\nBest design direction is:\n\n- **small curated bootstrap file** = always check first\n- structured continuity files = deeper truth\n- LanceDB = secondary retrieval only when needed\n\n## What this rules out\nSo I should avoid:\n- full transcript every turn\n- large raw JSON injection\n- big token burn\n- unsafe plugin-first experiments\n\n## Practical effect\nBefore replying, I should first check:\n- the **short notebook**\nnot\n- the whole library\n\nThat is now the design target I should follow.",
+  "lastTurnStatus": "success"
 }
