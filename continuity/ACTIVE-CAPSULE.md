@@ -16,6 +16,7 @@ Purpose: reload the smallest practical active task state before substantial work
 - Same-day work should not be lost after reset.
 - Older work should be recovered from USB daily notes, not from vague memory alone.
 - Vector memory is helper retrieval only, not source of truth.
+- New task-defining links/paths/examples must be promoted out of live chat context into the task ledger immediately.
 
 ## Latest milestone
 - Continuity Capsule named.

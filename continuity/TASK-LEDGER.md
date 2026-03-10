@@ -29,13 +29,29 @@ Update when: a task meaningfully changes files, produces outputs, or reaches a p
 - Exact current resume point:
   - add a compact per-task file ledger rule
   - investigate official OpenClaw hook/config path for automatic writes before reset/compaction
+  - learn/test a YouTube-reading pipeline for continuity research using the two user-provided videos
   - if no official auto-write path is available, keep manual/semi-auto writes honest and minimal
+- Working research inputs:
+  - `https://youtu.be/rUbQy05Boto?si=fRAOdHzFtTUkL8je`
+  - `https://youtu.be/7n9qbuzwS-U?si=1nBaiU53HlO-A3DI`
 - Unresolved:
   - no verified automatic pre-reset/pre-compaction writer
   - no verified automatic post-task writer
   - need a clean rule for when to update task ledger vs active capsule vs daily note
+  - YouTube reading pipeline learned conceptually but not yet verified live in this environment
 
 ## Ledger rule
 - `ACTIVE-CAPSULE.md` = smallest same-day overview
 - `TASK-LEDGER.md` = exact active task/file state
 - `daily/YYYY-MM-DD.md` = dated recovery note for older retrieval
+
+## Immediate capture rule
+Promote new task-critical inputs out of live chat context immediately.
+
+Write into `TASK-LEDGER.md` as soon as the user provides any of these:
+- exact URLs to test or research
+- exact files/paths to edit or inspect
+- exact commands, prompts, or examples that define the task
+- exact external artifacts that would be annoying or harmful to re-ask for
+
+If the item also matters beyond today or for recovery after reset/compaction, mirror it into the current daily note the same session.

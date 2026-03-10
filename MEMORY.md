@@ -25,6 +25,7 @@ Retrieve only what matters to the current task.
 - Prefer USB-resident runtimes over host `C:` dependencies.
 - Continuity source of truth is `workspace/continuity`; retrieval DB is secondary.
 - Keep replies short and do not append unsolicited next steps.
+- When the user shares a repo/article to learn from, extract the actual mechanism first; do not drift into marketing critique.
 
 ## Do Not Store
 - filler
