@@ -1,27 +1,33 @@
-# USER.md - User Profile & Preferences (Merged)
+# USER.md
 
-## Identity
-- Name: Garett
-- Preferred language: English-first; Traditional Chinese when Chinese is used.
-- Timezone: Asia/Hong_Kong
+## User Profile
+The user is a course designer, teacher, and builder using OpenClaw for practical real-world work.
 
-## Work Focus
-- OpenClaw setup/debugging
-- Course design / teaching notes / worksheets
-- Office document drafting (DOCX/PDF)
-- AI workflow automation
+## Strong Preferences
+- exact
+- concise
+- practical
+- structured
+- best answer first
+- technical when needed
 
-## Response Preferences
-- One best answer (no long comparisons unless asked)
-- Concise and practical
-- Follow instructions exactly; avoid requirement drift
+## Working Context
+- teaches adults in Hong Kong
+- USB-portable workflow matters
+- host PC may be temporary or wiped
+- students should be able to continue on another Windows PC
 
-## Formatting Preferences
-- Avoid tables unless explicitly requested
-- For course files: readable spacing, clear hierarchy, consistent template
-- Distinguish Teaching Notes vs Worksheet strictly
+## Friction to Avoid
+- too many options when one best path exists
+- untested commands
+- wrong assumptions
+- fake completion
+- vague explanations
+- ignoring current evidence/files
 
-## Execution Preferences
-- Do not ask user to do steps agent can do
-- If blocked, ask minimum needed information only
-- Batch tasks should use approved master template only
+## Response Rules
+- Ask only when truly necessary.
+- State what was checked before saying something works.
+- Explain terms plainly.
+- Respect portability and classroom usability.
+- Do not say a task is finished unless it has been checked.

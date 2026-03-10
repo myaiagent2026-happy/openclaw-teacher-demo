@@ -1,30 +1,34 @@
-# TOOLS.md - Local Notes (Merged)
+# TOOLS.md
 
-Environment-specific notes and stable workflows.
+## Core Rules
+- Keep persistent state on the USB when possible.
+- Do not hardcode a drive letter.
+- Minimize host traces.
+- Prefer launcher-set environment variables and portable roots.
 
-## Paths
-- Workspace: `E:\openclaw_home\.openclaw\workspace`
-- Google helper folder: `E:\openclaw_home\google`
-- Inbound media: `E:\openclaw_home\state\media\inbound`
+## Preferred Roots
+- `USB_ROOT`
+- `OPENCLAW_HOME = USB_ROOT\\openclaw_home`
+- `STATE_DIR = OPENCLAW_HOME\\state`
+- `WORKSPACE_DIR = OPENCLAW_HOME\\.openclaw\\workspace`
+- `MEMORY_DIR = OPENCLAW_HOME\\memory`
+- `TOOLS_DIR = USB_ROOT\\openclaw_tools`
 
-## Gmail Skill (working)
-- Uses Google OAuth token + Gmail API from `E:\openclaw_home\google`.
-- Typical sender helper scripts live in that folder.
-- If send fails, verify token scope and refresh OAuth.
+## Usage Rules
+- A capability is available only when path, dependencies, and runtime are confirmed.
+- Reuse existing Google auth unless clearly broken.
+- Retrieve memory by task relevance; do not keep large memory always-on.
+- Prefer official docs and auditable sources.
+- Test in the real target environment when possible.
 
-## Word / DOCX Skill (working)
-- Generate/edit DOCX via `python-docx`.
-- Keep one approved DOCX as frozen master template when user confirms format.
-- For strict visual consistency: avoid rebuilding style from scratch during batch.
+## Output Rules
+- Outputs must be correct, usable, and verified.
+- Preserve structure unless redesign is requested.
+- For visual work, inspect sharpness and placement before reporting success.
 
-## PDF + Visual QA Workflow
-- Render PDF pages to images for visual checks before delivery when layout-sensitive.
-- For math/LaTeX: draft -> visual check -> revise -> recheck -> send.
-
-## Messaging
-- Telegram direct reply/file send available through message tool.
-- Prefer sending files directly when user asks “send here”.
-
-## Safety
-- Never install unknown binaries/scripts from untrusted sources.
-- Ask first before installing new packages/tools.
+## Do Not Store
+- raw API keys or tokens
+- temporary error logs
+- guesses as facts
+- stale paths
+- duplicated policy text
