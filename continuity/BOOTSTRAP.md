@@ -18,7 +18,7 @@ Read first, before deeper continuity files.
 
 ## Latest handoff
 - Canonical continuity lives in `workspace/continuity`.
-- Trust order: `LATEST-HANDOFF.json` -> `INSTRUCTION-REGISTRY.md` -> `UNRESOLVED-TASKS.json` -> relevant `PROJECT-REGISTRY.json` entry -> `SESSION-LOG.md`.
+- Trust order: `LATEST-HANDOFF.json` -> `INSTRUCTION-REGISTRY.md` -> `ACTIVE-CAPSULE.md` -> `TASK-LEDGER.md` -> `UNRESOLVED-TASKS.json` -> relevant `PROJECT-REGISTRY.json` entry -> `SESSION-LOG.md`.
 
 ## Current unresolved priorities
 - continuity-auto-hooks: replace manual/semi-auto continuity discipline with verified automatic official hooks if possible.

@@ -5,11 +5,12 @@ description: Preserve and recover practical continuity across long chats, compac
 
 # Continuity Capsule
 
-Keep continuity in three layers:
+Keep continuity in four layers:
 
 1. **24-hour active layer** for current work that should not be forgotten
-2. **Daily USB notes** for durable dated recovery
-3. **Targeted retrieval** for older work only when needed
+2. **Exact task ledger** for file-level active state
+3. **Daily USB notes** for durable dated recovery
+4. **Targeted retrieval** for older work only when needed
 
 ## Core rule
 
@@ -45,7 +46,18 @@ Include:
 
 Prefer one larger coherent note instead of many tiny fragmented notes.
 
-### 3. Keep the active capsule small
+### 3. Keep an exact task ledger for file-level work
+
+Use a separate task ledger when the task involves exact files, outputs, or resume points that would be too detailed for the active capsule.
+
+Include:
+- exact files changed
+- outputs created
+- current commit/checkpoint if relevant
+- exact unresolved items
+- smallest useful resume point
+
+### 4. Keep the active capsule small
 
 The active capsule should be short enough to reload cheaply before substantial replies. It should answer:
 - What are we doing now?
@@ -53,11 +65,11 @@ The active capsule should be short enough to reload cheaply before substantial r
 - What is blocked or unfinished?
 - What changed most recently?
 
-### 4. Retrieve older work from USB notes
+### 5. Retrieve older work from USB notes
 
 If the work is older than the active window, search the dated notes, canonical continuity files, and other local evidence. Load only the minimum relevant note sections.
 
-### 5. Be honest about recovery
+### 6. Be honest about recovery
 
 If the exact task state was not preserved in the capsule, say so clearly. Recover from notes/logs instead of pretending to remember.
 

@@ -18,6 +18,13 @@
 ## Actions taken
 - Main work completed
 - Important checks performed
+- Commit / checkpoint if relevant
+
+## Exact files changed
+- Paths
+
+## Outputs created
+- Paths
 
 ## Decisions / Constraints
 - Durable rule
