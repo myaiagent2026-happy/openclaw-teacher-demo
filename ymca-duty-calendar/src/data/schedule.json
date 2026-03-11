@@ -2,169 +2,1944 @@
   "metadata": {
     "title": "YMCA Duty Calendar",
     "team": "YMCA",
-    "source": "Manually extracted YMCA duty dates"
+    "source": "User-provided YMCA_Timetable_2026.xlsx"
   },
   "events": [
     {
-      "date": "2026-01-12",
+      "date": "2026-01-16",
       "classCode": "QAT5",
-      "tutorNames": ["Garett", "Kary"],
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 1
     },
     {
       "date": "2026-01-19",
       "classCode": "QAT5",
-      "tutorNames": ["Garett", "Kary"],
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 2
     },
     {
-      "date": "2026-01-26",
+      "date": "2026-01-23",
       "classCode": "QAT5",
-      "tutorNames": ["Garett", "Kary"],
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 3
+    },
+    {
+      "date": "2026-01-27",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 4
+    },
+    {
+      "date": "2026-01-30",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 5
     },
     {
       "date": "2026-02-02",
       "classCode": "QAT5",
-      "tutorNames": ["Garett", "Kary"],
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 6
     },
     {
       "date": "2026-02-09",
       "classCode": "QAT5",
-      "tutorNames": ["Garett", "Kary"],
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-02-13",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
+    },
+    {
+      "date": "2026-02-16",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 9
     },
     {
       "date": "2026-02-23",
       "classCode": "QAT5",
-      "tutorNames": ["Garett", "Kary"],
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-02-27",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
     },
     {
       "date": "2026-03-02",
-      "classCode": "RSA7",
-      "tutorNames": ["Frank", "Debbie"],
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 12
+    },
+    {
+      "date": "2026-03-06",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-03-09",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
+    },
+    {
+      "date": "2026-03-12",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 15
+    },
+    {
+      "date": "2026-03-13",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 16
+    },
+    {
+      "date": "2026-03-16",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-03-20",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-03-23",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-03-27",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-03-30",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-04-02",
+      "classCode": "QAT5",
+      "tutorNames": [
+        "Garett",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
+    },
+    {
+      "date": "2026-03-06",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 1
     },
     {
       "date": "2026-03-09",
       "classCode": "RSA7",
-      "tutorNames": ["Frank", "Debbie"],
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 2
+    },
+    {
+      "date": "2026-03-11",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 3
     },
     {
       "date": "2026-03-16",
       "classCode": "RSA7",
-      "tutorNames": ["Frank", "Debbie"],
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 4
+    },
+    {
+      "date": "2026-03-18",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 5
     },
     {
       "date": "2026-03-23",
       "classCode": "RSA7",
-      "tutorNames": ["Frank", "Debbie"],
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 6
     },
-        {
-      "date": "2026-04-13",
-      "classCode": "QAT6",
-      "tutorNames": ["Frank", "Debbie"],
+    {
+      "date": "2026-03-25",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-03-30",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
+    },
+    {
+      "date": "2026-04-01",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 9
+    },
+    {
+      "date": "2026-04-08",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-04-13",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
+    },
+    {
+      "date": "2026-04-17",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 12
     },
     {
       "date": "2026-04-20",
-      "classCode": "QAT6",
-      "tutorNames": ["Frank", "Debbie"],
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-04-24",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
     },
     {
       "date": "2026-04-27",
-      "classCode": "QAT6",
-      "tutorNames": ["Frank", "Debbie"],
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 15
     },
     {
       "date": "2026-05-04",
-      "classCode": "QAT6",
-      "tutorNames": ["Frank", "Debbie"],
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 16
     },
-     {
-      "date": "2026-09-07",
-      "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+    {
+      "date": "2026-05-08",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-05-11",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-05-15",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-05-18",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-05-22",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-05-29",
+      "classCode": "RSA7",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
+    },
+    {
+      "date": "2026-04-23",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 1
+    },
+    {
+      "date": "2026-04-24",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 2
+    },
+    {
+      "date": "2026-04-29",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 3
+    },
+    {
+      "date": "2026-04-30",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 4
+    },
+    {
+      "date": "2026-05-07",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 5
+    },
+    {
+      "date": "2026-05-08",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 6
+    },
+    {
+      "date": "2026-05-11",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-05-14",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
+    },
+    {
+      "date": "2026-05-15",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 9
+    },
+    {
+      "date": "2026-05-18",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-05-21",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
+    },
+    {
+      "date": "2026-05-22",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 12
+    },
+    {
+      "date": "2026-05-28",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-05-29",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
+    },
+    {
+      "date": "2026-06-04",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 15
+    },
+    {
+      "date": "2026-06-05",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 16
+    },
+    {
+      "date": "2026-06-11",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-06-12",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-06-18",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-06-25",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-06-26",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-07-03",
+      "classCode": "PFSA2",
+      "tutorNames": [
+        "Garett",
+        "Cman"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
+    },
+    {
+      "date": "2026-05-14",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 1
+    },
+    {
+      "date": "2026-05-21",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 2
+    },
+    {
+      "date": "2026-05-28",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 3
+    },
+    {
+      "date": "2026-06-01",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 4
+    },
+    {
+      "date": "2026-06-04",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 5
+    },
+    {
+      "date": "2026-06-05",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 6
+    },
+    {
+      "date": "2026-06-08",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-06-11",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
+    },
+    {
+      "date": "2026-06-12",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 9
+    },
+    {
+      "date": "2026-06-15",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-06-18",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
+    },
+    {
+      "date": "2026-06-22",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 12
+    },
+    {
+      "date": "2026-06-25",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-06-26",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
+    },
+    {
+      "date": "2026-07-02",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 15
+    },
+    {
+      "date": "2026-07-03",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 16
+    },
+    {
+      "date": "2026-07-09",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-07-10",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-07-16",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-07-17",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-07-23",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-07-24",
+      "classCode": "QAT6",
+      "tutorNames": [
+        "Frank",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
+    },
+    {
+      "date": "2026-06-08",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 1
+    },
+    {
+      "date": "2026-06-09",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 2
+    },
+    {
+      "date": "2026-06-15",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 3
+    },
+    {
+      "date": "2026-06-16",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 4
+    },
+    {
+      "date": "2026-06-22",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 5
+    },
+    {
+      "date": "2026-06-23",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 6
+    },
+    {
+      "date": "2026-06-29",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-06-30",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
+    },
+    {
+      "date": "2026-07-06",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 9
+    },
+    {
+      "date": "2026-07-07",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-07-10",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
+    },
+    {
+      "date": "2026-07-13",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 12
+    },
+    {
+      "date": "2026-07-14",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-07-17",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
+    },
+    {
+      "date": "2026-07-20",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 15
+    },
+    {
+      "date": "2026-07-21",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 16
+    },
+    {
+      "date": "2026-07-24",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-07-27",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-07-28",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-07-31",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-08-03",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-08-07",
+      "classCode": "PFSA3",
+      "tutorNames": [
+        "New Tutor",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
+    },
+    {
+      "date": "2026-09-07",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 1
+    },
+    {
+      "date": "2026-09-10",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 2
+    },
+    {
+      "date": "2026-09-14",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 3
+    },
+    {
+      "date": "2026-09-17",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 4
+    },
+    {
+      "date": "2026-09-21",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 5
+    },
+    {
+      "date": "2026-09-24",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 6
+    },
+    {
+      "date": "2026-09-28",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-10-05",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
+    },
+    {
+      "date": "2026-10-08",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 9
+    },
+    {
+      "date": "2026-10-12",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-10-15",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
+    },
+    {
+      "date": "2026-10-22",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 12
+    },
+    {
+      "date": "2026-10-26",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-10-29",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
+    },
+    {
+      "date": "2026-11-02",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 15
+    },
+    {
+      "date": "2026-11-05",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 16
+    },
+    {
+      "date": "2026-11-09",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-11-12",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-11-16",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-11-19",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-11-23",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-11-26",
+      "classCode": "RSA8",
+      "tutorNames": [
+        "Frank",
+        "Kary"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
+    },
+    {
+      "date": "2026-08-18",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 1
+    },
+    {
+      "date": "2026-08-21",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 2
+    },
+    {
+      "date": "2026-08-25",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 3
+    },
+    {
+      "date": "2026-08-28",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 4
+    },
+    {
+      "date": "2026-09-01",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 5
+    },
+    {
+      "date": "2026-09-04",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 6
+    },
+    {
+      "date": "2026-09-08",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-09-11",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
+    },
+    {
+      "date": "2026-09-15",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 9
+    },
+    {
+      "date": "2026-09-18",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-09-22",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
+    },
+    {
+      "date": "2026-09-25",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 12
+    },
+    {
+      "date": "2026-09-29",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-10-02",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
+    },
+    {
+      "date": "2026-10-06",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 15
+    },
+    {
+      "date": "2026-10-09",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 16
+    },
+    {
+      "date": "2026-10-13",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-10-16",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-10-20",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-10-23",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-10-27",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-10-30",
+      "classCode": "QAT7",
+      "tutorNames": [
+        "Garett",
+        "Debbie"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
     },
     {
       "date": "2026-09-14",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 1
+    },
+    {
+      "date": "2026-09-18",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 2
     },
     {
       "date": "2026-09-21",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 3
+    },
+    {
+      "date": "2026-09-25",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 4
     },
     {
       "date": "2026-09-28",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 5
+    },
+    {
+      "date": "2026-10-02",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 6
     },
     {
       "date": "2026-10-05",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 7
+    },
+    {
+      "date": "2026-10-09",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 8
     },
     {
       "date": "2026-10-12",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 9
     },
     {
-      "date": "2026-10-19",
+      "date": "2026-10-16",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 10
+    },
+    {
+      "date": "2026-10-23",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 11
     },
     {
       "date": "2026-10-26",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 12
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-06",
       "classCode": "PFSA4",
-      "tutorNames": ["New Tutor", "New Mentor"],
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
       "team": "YMCA",
-      "status": "normal duty"
+      "status": "normal duty",
+      "lesson": 13
+    },
+    {
+      "date": "2026-11-09",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 14
+    },
+    {
+      "date": "2026-11-12",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 15
+    },
+    {
+      "date": "2026-11-13",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 16
+    },
+    {
+      "date": "2026-11-16",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 17
+    },
+    {
+      "date": "2026-11-19",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 18
+    },
+    {
+      "date": "2026-11-20",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 19
+    },
+    {
+      "date": "2026-11-23",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 20
+    },
+    {
+      "date": "2026-11-26",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 21
+    },
+    {
+      "date": "2026-11-27",
+      "classCode": "PFSA4",
+      "tutorNames": [
+        "New Tutor",
+        "New Mentor"
+      ],
+      "team": "YMCA",
+      "status": "normal duty",
+      "lesson": 22
     }
   ]
 }
