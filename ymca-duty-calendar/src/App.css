@@ -38,6 +38,7 @@ body {
 
 .calendar-container {
   flex: 1;
+  min-width: 0;
   background: white;
   border-radius: 8px;
   padding: 1rem;
@@ -238,28 +239,39 @@ body {
   }
 }
 
-@media (max-width: 932px) and (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 500px),
+       (orientation: landscape) and (max-width: 1024px) {
   .header {
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .header h1 {
+    font-size: 1rem;
   }
 
   .main-content {
-    padding: 0.35rem;
+    display: block;
+    padding: 0.25rem;
+    gap: 0;
   }
 
-  .sidebar {
-    display: none;
+  .sidebar,
+  .filters,
+  .legend {
+    display: none !important;
   }
 
   .calendar-container {
-    width: 100%;
+    width: 100% !important;
     max-width: none;
-    padding: 0.35rem;
+    margin: 0;
+    padding: 0.25rem;
   }
 
   .fc .fc-toolbar {
     flex-wrap: nowrap;
     align-items: center;
+    gap: 0.35rem;
   }
 
   .fc .fc-toolbar-title {
@@ -267,12 +279,12 @@ body {
   }
 
   .fc .fc-button {
-    padding: 0.2rem 0.4rem;
-    font-size: 0.75rem;
+    padding: 0.18rem 0.34rem;
+    font-size: 0.72rem;
   }
 
   .fc .fc-daygrid-day-frame {
-    min-height: 5.2rem;
+    min-height: 5.6rem;
   }
 
   .fc-daygrid-event {
@@ -283,7 +295,7 @@ body {
   .event-label {
     display: block;
     width: 100%;
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     line-height: 1.08;
     white-space: normal;
     word-break: break-word;
