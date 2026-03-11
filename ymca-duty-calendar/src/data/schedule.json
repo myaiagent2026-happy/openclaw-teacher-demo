@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "YMCA Duty Calendar",
+    "team": "YMCA",
+    "source": "Manually extracted YMCA duty dates"
+  },
+  "events": [
+    {
+      "date": "2026-01-12",
+      "classCode": "QAT5",
+      "tutorNames": ["Garett", "Kary"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-01-19",
+      "classCode": "QAT5",
+      "tutorNames": ["Garett", "Kary"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-01-26",
+      "classCode": "QAT5",
+      "tutorNames": ["Garett", "Kary"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-02-02",
+      "classCode": "QAT5",
+      "tutorNames": ["Garett", "Kary"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-02-09",
+      "classCode": "QAT5",
+      "tutorNames": ["Garett", "Kary"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-02-23",
+      "classCode": "QAT5",
+      "tutorNames": ["Garett", "Kary"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-03-02",
+      "classCode": "RSA7",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-03-09",
+      "classCode": "RSA7",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-03-16",
+      "classCode": "RSA7",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-03-23",
+      "classCode": "RSA7",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+        {
+      "date": "2026-04-13",
+      "classCode": "QAT6",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-04-20",
+      "classCode": "QAT6",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-04-27",
+      "classCode": "QAT6",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-05-04",
+      "classCode": "QAT6",
+      "tutorNames": ["Frank", "Debbie"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+     {
+      "date": "2026-09-07",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-09-14",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-09-21",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-09-28",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-10-05",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-10-12",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-10-19",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-10-26",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    },
+    {
+      "date": "2026-11-02",
+      "classCode": "PFSA4",
+      "tutorNames": ["New Tutor", "New Mentor"],
+      "team": "YMCA",
+      "status": "normal duty"
+    }
+  ]
+}
