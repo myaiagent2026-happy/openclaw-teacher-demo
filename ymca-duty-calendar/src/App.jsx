@@ -21,8 +21,17 @@ function App() {
   })
 
   const filteredEvents = useMemo(() => {
-    return events // No filtering to match the prompt. This is the only expected output.
+    return events
   }, [events, filters])
+
+  const renderEventContent = (eventInfo) => {
+    const text = eventInfo.event.extendedProps?.displayTitle || eventInfo.event.title
+    return (
+      <div className="event-label" title={text}>
+        {text}
+      </div>
+    )
+  }
 
   return (
     <div className="app">
@@ -44,13 +53,14 @@ function App() {
               right: 'dayGridMonth,timeGridWeek,listMonth'
             }}
             events={filteredEvents}
+            eventContent={renderEventContent}
             eventClick={(info) => setSelectedEvent(info.event.extendedProps)}
             height="auto"
             navLinks={true}
             editable={false}
             selectable={false}
             selectMirror={false}
-            dayMaxEvents={true}
+            dayMaxEvents={4}
             weekends={true}
           />
         </div>
