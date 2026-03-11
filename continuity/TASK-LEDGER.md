@@ -53,5 +53,8 @@ Write into `TASK-LEDGER.md` as soon as the user provides any of these:
 - exact files/paths to edit or inspect
 - exact commands, prompts, or examples that define the task
 - exact external artifacts that would be annoying or harmful to re-ask for
+- new recurring workflow requests, schedules, or standing operating instructions
 
 If the item also matters beyond today or for recovery after reset/compaction, mirror it into the current daily note the same session.
+
+If the user defines a recurring workflow, also add or update an explicit unresolved task / standing job entry the same session.

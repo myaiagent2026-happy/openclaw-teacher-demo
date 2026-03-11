@@ -17,6 +17,7 @@ Purpose: reload the smallest practical active task state before substantial work
 - Older work should be recovered from USB daily notes, not from vague memory alone.
 - Vector memory is helper retrieval only, not source of truth.
 - New task-defining links/paths/examples must be promoted out of live chat context into the task ledger immediately.
+- New recurring workflow requests must be recorded as standing jobs/unresolved tasks the same session.
 
 ## Latest milestone
 - Continuity Capsule named.

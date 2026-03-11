@@ -57,10 +57,13 @@ Include:
 - exact unresolved items
 - smallest useful resume point
 - exact task-defining inputs from the user (for example: URLs, file paths, commands, prompts, test cases)
+- recurring workflow requests or standing operating instructions (for example: daily checks, scheduled summaries, monitoring routines)
 
 Do not leave task-defining inputs in live chat context only. Promote them into the task ledger in the same session.
 
 If those inputs may matter after the active window or after reset/compaction, mirror them into the dated daily note as well.
+
+If the user defines a recurring workflow, also create or update an explicit unresolved task / standing-job record in the same session.
 
 ### 4. Keep the active capsule small
 

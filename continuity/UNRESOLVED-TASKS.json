@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "authoritative",
-  "updatedAt": "2026-03-09 21:30 Asia/Shanghai",
+  "updatedAt": "2026-03-11 11:32 Asia/Shanghai",
   "tasks": [
     {
       "id": "continuity-auto-hooks",
@@ -42,6 +42,14 @@
       "priority": "medium",
       "whyOpen": "Direction approved, implementation not yet built.",
       "nextEvidenceNeeded": "SIM/number ready, chosen stack, actual build files"
+    },
+    {
+      "id": "daily-openclaw-research-digest",
+      "title": "Before 9am daily, search YouTube, X, and Reddit for OpenClaw news, skills, and self-improvement ideas, then send the user a summary email",
+      "status": "open",
+      "priority": "high",
+      "whyOpen": "User explicitly requested a recurring daily research + summary email workflow, but it was not captured as a standing job and the first day was missed.",
+      "nextEvidenceNeeded": "Verified search routine, verified delivery path for email, and evidence of at least one successful daily run"
     }
   ]
 }
